@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="min-w-screen flex min-h-screen flex-col bg-black">
       <Head>
-        <title>Pylar AI by Pencil</title>
+      <title>SuperData</title>
         <link rel="icon" href="./favicon.ico" />
       </Head>
       <Menu />
