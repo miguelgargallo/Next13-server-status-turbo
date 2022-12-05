@@ -19,7 +19,7 @@
     "turbo": "latest"
   },
   "dependencies": {
-    "framer-motion": "^7.6.18",
+    "framer-motion": "^7.6.19",
     "meshgrad": "^0.0.10"
   },
   "packageManager": "yarn@1.22.17"
