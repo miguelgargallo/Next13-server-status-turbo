@@ -16,3 +16,7 @@ export * from "./Footer";
 export * from "./Scrollable";
 /* Sales Pylar */
 export * from "./Contact";
+/* Logo */
+export * from "./PylarLogo";
+export * from "./SuperdataLogo";
+export * from "./PencilLogo";
