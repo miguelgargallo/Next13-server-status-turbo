@@ -38,7 +38,7 @@ export default function Home() {
             </div>
           </motion.div>
           <div className="flex flex-col items-center justify-center py-8">
-            <button className="text-black bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+            <button className="rounded border-0 bg-green-500 py-2 px-6 text-lg text-black hover:bg-green-600 focus:outline-none">
               <a
                 href="https://twitter.com/superdatas"
                 target="_blank"
