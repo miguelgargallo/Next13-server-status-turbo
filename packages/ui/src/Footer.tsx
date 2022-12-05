@@ -48,28 +48,9 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <p
-      className="text-white"
-      >SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil.</p>
+      <p className="text-white">
+        SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil.
+      </p>
     </footer>
   );
 };
-
-
-/*
- <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiguelgargallo%2FNext13-Fetch-Data-turbo&project-name=miguelgargallo-next13-fetch-data-turbo&repo-name=miguelgargallo-next13-fetch-data-turbo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden p-2 md:block"
-          >
-            <picture>
-              <img
-                src="https://vercel.com/button"
-                alt="Landscape picture"
-                width={75}
-                height={20}
-              />
-            </picture>
-          </a>
-*/
