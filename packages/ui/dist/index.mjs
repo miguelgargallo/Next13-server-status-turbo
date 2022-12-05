@@ -7184,7 +7184,7 @@ var Menu = () => {
         style: { scaleX: scrollYProgress }
       }),
       /* @__PURE__ */ jsxs3("div", {
-        className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-gray-800",
+        className: "flex flex-row items-center justify-between bg-gradient-to-r from-pink-500 to-gray-800",
         children: [
           /* @__PURE__ */ jsx4(MenuLogo, {}),
           /* @__PURE__ */ jsx4("button", {
