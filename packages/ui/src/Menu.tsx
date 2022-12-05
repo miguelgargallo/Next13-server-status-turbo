@@ -1,5 +1,5 @@
 import { Version } from "./Version";
-import { MenuLogo } from "./MenuLogo";
+import { SuperdataLogo } from "./MenuLogo";
 import { Supermenu } from "./Supermenu";
 import { motion, useScroll } from "framer-motion";
 import "./styles.css";
@@ -25,7 +25,7 @@ export const Menu = () => {
             <Supermenu />
 
       <div className="flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700">
-        <MenuLogo />
+        <SuperdataLogo />
         <button className="rounded-xl py-2 px-4 font-bold text-white">
           <a href="/app">App</a>
         </button>
