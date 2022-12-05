@@ -50,7 +50,7 @@ export const Footer = () => {
       </div>
       <p
       className="text-white"
-      >The Art of Prompting, tomorrow, today.</p>
+      >SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil.</p>
     </footer>
   );
 };

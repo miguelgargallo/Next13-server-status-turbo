@@ -7429,7 +7429,7 @@ var Footer = () => {
       }),
       /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", {
         className: "text-white",
-        children: "The Art of Prompting, tomorrow, today."
+        children: "SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil."
       })
     ]
   });
