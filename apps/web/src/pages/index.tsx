@@ -38,36 +38,23 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center py-8">
               <p className="text-center text-2xl font-bold text-white">
-                Stable Diffusion 1.4, vs 1.5 vs 2.0 + Pylar&trade; AI prompts
-              </p>
+              SuperData is a high-quality, reliable server upstream service provider that is part of the Pencil initiative.              </p>
             </div>
           </motion.div>
-        </div>
-        <div className="superdataDiv">
-          <motion.img
-            className="pylarDimension"
-            src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.0/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLpA_RealESRGAN_x4plus.jpeg"
-            alt="Earth by Stable Diffusion 1.4 and Pylar Prompt guidelines"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2 }}
-          />
-          <motion.img
-            className="pylarDimension"
-            src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.1/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLjw_RealESRGAN_x4plus.jpeg"
-            alt="Earth by Stable Diffusion 1.5 and Pylar Prompt guidelines"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4 }}
-          />
-          <motion.img
-            className="pylarDimension"
-            src="https://raw.githubusercontent.com/superdatas/pylarAI-results/main/120422/00005-1833717168-Earth%20seen%20fr.png"
-            alt="Earth by Stable Diffusion 2.0 and Pylar Prompt guidelines"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.6 }}
-          />
+          <div className="superdataDiv">
+            <p className="">
+              SuperData services, as a part of the Pencil initiative, are a
+              great example of a solid server upstream service. These services
+              are designed to handle a large amount of data traffic without
+              interruption or delay, ensuring that websites and other online
+              services can operate smoothly and efficiently. SuperData services
+              are known for their reliability, speed, and scalability, allowing
+              them to easily adapt to changes in traffic and user demand. As
+              part of the Pencil initiative, SuperData services are committed to
+              providing high-quality, reliable server upstream services to
+              businesses and organizations around the world.
+            </p>
+          </div>
         </div>
       </main>
       <Footer />

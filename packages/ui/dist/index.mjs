@@ -612,7 +612,7 @@ var Version = () => {
       href: "http://twitter.com/miguelgargallo",
       target: "_blank",
       rel: "noopener noreferrer",
-      children: "v1.0.0"
+      children: "v1.0.1"
     })
   });
 };
@@ -7274,8 +7274,8 @@ var TitleSuperdata = () => {
               xmlns: "http://www.w3.org/2000/svg",
               width: "300",
               height: "50",
-              viewBox: "0 0 3060 678",
-              className: "w-48 h-12 m-6",
+              viewBox: "0 0 3450 678",
+              className: "m-6 h-12 w-48",
               children: [
                 /* @__PURE__ */ jsx5("defs", {}),
                 /* @__PURE__ */ jsxs4("g", {
@@ -7294,7 +7294,7 @@ var TitleSuperdata = () => {
                       transform: "matrix(0 -1 -1 0 905.5 905.5)"
                     }),
                     /* @__PURE__ */ jsx5("path", {
-                      fill: "#ffffff",
+                      fill: "#000000",
                       d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                       transform: "matrix(0 -1 -1 0 842.5 842.5)"
                     }),
@@ -7304,7 +7304,7 @@ var TitleSuperdata = () => {
                       transform: "matrix(0 -1 -1 0 779 779)"
                     }),
                     /* @__PURE__ */ jsx5("path", {
-                      fill: "#ffffff",
+                      fill: "#000000",
                       d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                       transform: "matrix(0 -1 -1 0 715.5 715.5)"
                     }),
@@ -7316,7 +7316,7 @@ var TitleSuperdata = () => {
                       children: /* @__PURE__ */ jsx5("tspan", {
                         x: "993.25",
                         y: "697",
-                        children: "Pylar\u2122 AI"
+                        children: "SuperData\u2122"
                       })
                     }),
                     /* @__PURE__ */ jsx5("text", {
