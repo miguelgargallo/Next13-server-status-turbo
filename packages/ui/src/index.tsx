@@ -2,7 +2,8 @@ import * as React from "react";
 // Buttons
 export * from "./Button";
 // Menu
-export * from "./Menu";// Branding
+export * from "./Menu";
+export * from "./Supermenu";
 // Logo
 export * from "./MenuLogo";
 // Title and subtitle
