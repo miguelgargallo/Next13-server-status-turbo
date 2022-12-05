@@ -48,7 +48,7 @@ export const MenuLogo = () => {
                 font-weight="500"
               >
                 <tspan x="993.25" y="697">
-                  SuperData&trade;
+                  SuperData&trade;d
                 </tspan>
               </text>
               <text
