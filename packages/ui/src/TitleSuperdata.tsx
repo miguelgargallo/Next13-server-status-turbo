@@ -15,7 +15,7 @@ export const TitleSuperdata = () => {
             >
               <defs></defs>
               <g
-                fill="#000000"
+                fill="#ffffff"
                 fill-rule="evenodd"
                 transform="translate(-151 -173)"
               >
@@ -25,7 +25,7 @@ export const TitleSuperdata = () => {
                   transform="matrix(0 -1 -1 0 980 980)"
                 ></path>
                 <path
-                  fill="#000000"
+                  fill="#147df5"
                   d="M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z"
                   transform="matrix(0 -1 -1 0 905.5 905.5)"
                 ></path>
