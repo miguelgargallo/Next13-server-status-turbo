@@ -26,26 +26,41 @@ export default function Home() {
           >
             <div className="m-3 flex flex-col items-center justify-center">
               <h2 className="py-4 text-center text-2xl font-bold text-white">
-                Discover the power of AI in your business with Pylar and SuperDatas
+                Discover the power of AI in your business with Pylar and
+                SuperDatas
               </h2>
             </div>
             <div className="flex flex-col items-center justify-center py-8">
               <p className="text-center text-2xl font-bold text-white">
-              SuperData is a high-quality, reliable server upstream service provider that is part of the Pencil initiative.              </p>
+                SuperData is a high-quality, reliable server upstream service
+                provider that is part of the Pencil initiative.{" "}
+              </p>
             </div>
           </motion.div>
           <div className="superdataDiv">
             <p className="">
-              SuperData services, as a part of the Pencil initiative, are a
-              great example of a solid server upstream service. These services
-              are designed to handle a large amount of data traffic without
-              interruption or delay, ensuring that websites and other online
-              services can operate smoothly and efficiently. SuperData services
-              are known for their reliability, speed, and scalability, allowing
-              them to easily adapt to changes in traffic and user demand. As
-              part of the Pencil initiative, SuperData services are committed to
-              providing high-quality, reliable server upstream services to
-              businesses and organizations around the world.
+              In the AI sector, cloud services are increasingly being used to
+              provide organizations with scalable and flexible computing
+              resources for running AI and machine learning (ML) algorithms.
+              These services allow businesses to access powerful computing
+              resources, such as GPUs and TPUs, on-demand, without the need to
+              invest in expensive hardware. One of the key benefits of using
+              cloud services for AI and ML is the ability to easily scale up or
+              down based on the needs of the business. This allows organizations
+              to efficiently allocate resources and avoid overprovisioning or
+              underprovisioning. Another benefit of cloud services is the
+              ability to easily access and process large amounts of data. Many
+              cloud providers offer services for storing, organizing, and
+              analyzing data, making it easy for businesses to gain insights
+              from their data and improve their AI and ML algorithms. To
+              effectively manage AI and ML in the cloud, organizations need to
+              have the right tools and infrastructure in place. This is where
+              SuperData services come in. As part of the Pencil initiative,
+              SuperData provides high-quality, reliable server upstream services
+              that are designed to handle large amounts of data traffic without
+              interruption or delay. This ensures that AI and ML algorithms can
+              run smoothly and efficiently, allowing businesses to fully
+              leverage the power of cloud computing for AI and ML.
             </p>
           </div>
         </div>
