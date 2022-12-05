@@ -1053,7 +1053,6 @@ var lowercaseSVGElements = [
   "stop",
   "switch",
   "symbol",
-  "svg",
   "text",
   "tspan",
   "use",
@@ -1608,7 +1607,7 @@ function buildSVGPath(attrs, length, spacing = 1, offset = 0, useDashCase = true
 }
 
 // ../../node_modules/framer-motion/dist/es/render/svg/utils/build-attrs.mjs
-function buildSVGAttrs(state, _a, options, isSVGTag2, transformTemplate) {
+function buildSVGAttrs(state, _a, options, transformTemplate) {
   var _b = _a, {
     attrX,
     attrY,
@@ -1627,12 +1626,6 @@ function buildSVGAttrs(state, _a, options, isSVGTag2, transformTemplate) {
     "pathOffset"
   ]);
   buildHTMLStyles(state, latest, options, transformTemplate);
-  if (isSVGTag2) {
-    if (state.style.viewBox) {
-      state.attrs.viewBox = state.style.viewBox;
-    }
-    return;
-  }
   state.attrs = state.style;
   state.style = {};
   const { attrs, style, dimensions } = state;
@@ -1658,14 +1651,11 @@ var createSvgRenderState = () => __spreadProps(__spreadValues({}, createHtmlRend
   attrs: {}
 });
 
-// ../../node_modules/framer-motion/dist/es/render/svg/utils/is-svg-tag.mjs
-var isSVGTag = (tag) => typeof tag === "string" && tag.toLowerCase() === "svg";
-
 // ../../node_modules/framer-motion/dist/es/render/svg/use-props.mjs
-function useSVGProps(props, visualState, _isStatic, Component) {
+function useSVGProps(props, visualState) {
   const visualProps = (0, import_react15.useMemo)(() => {
     const state = createSvgRenderState();
-    buildSVGAttrs(state, visualState, { enableHardwareAcceleration: false }, isSVGTag(Component), props.transformTemplate);
+    buildSVGAttrs(state, visualState, { enableHardwareAcceleration: false }, props.transformTemplate);
     return __spreadProps(__spreadValues({}, state.attrs), {
       style: __spreadValues({}, state.style)
     });
@@ -1682,7 +1672,7 @@ function useSVGProps(props, visualState, _isStatic, Component) {
 function createUseRender(forwardMotionProps = false) {
   const useRender = (Component, props, projectionId, ref, { latestValues }, isStatic) => {
     const useVisualProps = isSVGComponent(Component) ? useSVGProps : useHTMLProps;
-    const visualProps = useVisualProps(props, latestValues, isStatic, Component);
+    const visualProps = useVisualProps(props, latestValues, isStatic);
     const filteredProps = filterProps(props, typeof Component === "string", forwardMotionProps);
     const elementProps = __spreadProps(__spreadValues(__spreadValues({}, filteredProps), visualProps), {
       ref
@@ -1873,7 +1863,7 @@ var svgMotionConfig = {
           height: 0
         };
       }
-      buildSVGAttrs(renderState, latestValues, { enableHardwareAcceleration: false }, isSVGTag(instance.tagName), props.transformTemplate);
+      buildSVGAttrs(renderState, latestValues, { enableHardwareAcceleration: false }, props.transformTemplate);
       renderSVG(instance, renderState);
     }
   })
@@ -3407,7 +3397,7 @@ var isFloat = (value) => {
 };
 var MotionValue = class {
   constructor(init) {
-    this.version = "7.6.19";
+    this.version = "7.6.18";
     this.timeDelta = 0;
     this.lastUpdated = 0;
     this.updateSubscribers = new SubscriptionManager();
@@ -4904,7 +4894,7 @@ function updateMotionValuesFromProps(element, next, prev) {
         willChange.add(key);
       }
       if (process.env.NODE_ENV === "development") {
-        warnOnce(nextValue.version === "7.6.19", `Attempting to mix Framer Motion versions ${nextValue.version} with 7.6.19 may not work as expected.`);
+        warnOnce(nextValue.version === "7.6.18", `Attempting to mix Framer Motion versions ${nextValue.version} with 7.6.18 may not work as expected.`);
       }
     } else if (isMotionValue(prevValue)) {
       element.addValue(key, motionValue(nextValue));
@@ -5283,10 +5273,6 @@ var HTMLVisualElement = class extends DOMVisualElement {
 
 // ../../node_modules/framer-motion/dist/es/render/svg/SVGVisualElement.mjs
 var SVGVisualElement = class extends DOMVisualElement {
-  constructor() {
-    super(...arguments);
-    this.isSVGTag = false;
-  }
   getBaseTargetFromProps(props, key) {
     return props[key];
   }
@@ -5305,14 +5291,10 @@ var SVGVisualElement = class extends DOMVisualElement {
     return scrapeMotionValuesFromProps2(props);
   }
   build(renderState, latestValues, options, props) {
-    buildSVGAttrs(renderState, latestValues, options, this.isSVGTag, props.transformTemplate);
+    buildSVGAttrs(renderState, latestValues, options, props.transformTemplate);
   }
   renderInstance(instance, renderState, styleProp, projection) {
     renderSVG(instance, renderState, styleProp, projection);
-  }
-  mount(instance) {
-    this.isSVGTag = isSVGTag(instance.tagName);
-    super.mount(instance);
   }
 };
 
