@@ -12,7 +12,7 @@ export const MenuLogo = () => {
           >
             <defs></defs>
             <g
-              fill="#000000"
+              fill="#ffffff"
               fill-rule="evenodd"
               transform="translate(-151 -173)"
             >

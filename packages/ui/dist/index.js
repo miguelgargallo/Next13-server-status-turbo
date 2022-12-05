@@ -650,7 +650,7 @@ var MenuLogo = () => {
           children: [
             /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("defs", {}),
             /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("g", {
-              fill: "#000000",
+              fill: "#ffffff",
               "fill-rule": "evenodd",
               transform: "translate(-151 -173)",
               children: [
@@ -7199,7 +7199,7 @@ var Menu = () => {
         style: { scaleX: scrollYProgress }
       }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", {
-        className: "flex flex-row items-center justify-between bg-gradient-to-r from-pink-500 to-gray-800",
+        className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700",
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(MenuLogo, {}),
           /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {

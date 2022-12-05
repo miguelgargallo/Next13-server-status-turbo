@@ -21,7 +21,7 @@ export const Menu = () => {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <div className="flex flex-row items-center justify-between bg-gradient-to-r from-pink-500 to-gray-800">
+      <div className="flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700">
         <MenuLogo />
         <button className="rounded-xl py-2 px-4 font-bold text-white">
           <a href="/app">App</a>
