@@ -37,40 +37,42 @@ export default function Home() {
               </p>
               <div className="flex flex-col items-center justify-center py-8">
                 <button className="rounded-xl bg-gradient-to-r from-pink-500 to-yellow-500 py-2 px-4 font-bold text-black shadow-md hover:from-pink-800 hover:to-yellow-800 hover:text-white hover:shadow-xl">
-                  <a href="https://pencil.li">Pencil Domains&trade;</a>
+                  <a href="https://pencil.li">Discover Pylar&trade; AI</a>
                 </button>
               </div>
             </div>
           </motion.div>
-          <div className="superdataDiv">
-            <p className="">
-              The use of AI in the business sector is rapidly increasing, with
-              many organizations implementing AI and machine learning (ML)
-              technologies to improve their operations and better serve their
-              customers. In the AI sector, these technologies are often used to
-              automate tasks, improve decision making, and gain insights from
-              large amounts of data. One of the key applications of AI in the
-              business sector is in the area of data management. Machine
-              learning algorithms can be used to analyze and process large
-              amounts of data, identify patterns and trends, and make
-              predictions about future outcomes. This can help businesses better
-              understand their customers, improve their products and services,
-              and make more informed decisions. Another common use of AI in the
-              business sector is in the area of customer service. By using
-              natural language processing (NLP) and other AI technologies,
-              businesses can automate their customer service operations,
-              providing quick and accurate responses to customer inquiries and
-              improving the overall customer experience. To manage these AI and
-              ML technologies effectively, businesses need to have a robust
-              server infrastructure in place. This is where SuperData services
-              come in. By providing high-quality, reliable server upstream
-              services, SuperData enables businesses to handle large amounts of
-              data traffic without interruption or delay. This ensures that AI
-              and ML technologies can operate smoothly and efficiently, allowing
-              businesses to fully leverage the power of these technologies to
-              improve their operations.
-            </p>
-          </div>
+          <motion.div
+            className="superdataDiv"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
+          >
+            The use of AI in the business sector is rapidly increasing, with
+            many organizations implementing AI and machine learning (ML)
+            technologies to improve their operations and better serve their
+            customers. In the AI sector, these technologies are often used to
+            automate tasks, improve decision making, and gain insights from
+            large amounts of data. One of the key applications of AI in the
+            business sector is in the area of data management. Machine learning
+            algorithms can be used to analyze and process large amounts of data,
+            identify patterns and trends, and make predictions about future
+            outcomes. This can help businesses better understand their
+            customers, improve their products and services, and make more
+            informed decisions. Another common use of AI in the business sector
+            is in the area of customer service. By using natural language
+            processing (NLP) and other AI technologies, businesses can automate
+            their customer service operations, providing quick and accurate
+            responses to customer inquiries and improving the overall customer
+            experience. To manage these AI and ML technologies effectively,
+            businesses need to have a robust server infrastructure in place.
+            This is where SuperData services come in. By providing high-quality,
+            reliable server upstream services, SuperData enables businesses to
+            handle large amounts of data traffic without interruption or delay.
+            This ensures that AI and ML technologies can operate smoothly and
+            efficiently, allowing businesses to fully leverage the power of
+            these technologies to improve their operations.
+          </motion.div>
         </div>
       </main>
       <Footer />

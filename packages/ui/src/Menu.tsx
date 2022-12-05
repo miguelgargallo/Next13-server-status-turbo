@@ -33,10 +33,22 @@ export const Menu = () => {
           <a href="/cloud">Cloud</a>
         </button>
         <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a href="https://pencil.li">Pencil Domains&trade;</a>
+          <a
+            href="https://pencil.li"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            Pencil Domains&trade;
+          </a>
         </button>
         <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a href="https://pylar.org">Pylar&trade; AI</a>
+          <a
+            href="https://pylar.org"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            Pylar&trade; AI
+          </a>
         </button>
         <div
           className="hidden py-2 px-4 font-bold text-white md:block"
