@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from "next/head";
 import { Menu } from "ui";
-import { TitlePylar } from "ui";
+import { TitleSuperdata } from "ui";
 import { Footer } from "ui";
 import { motion } from "framer-motion";
 import { generateJSXMeshGradient } from "meshgrad";
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <Menu />
       <main>
-        <TitlePylar />
+        <TitleSuperdata />
         <div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        <div className="pylarDiv">
+        <div className="superdataDiv">
           <motion.img
             className="pylarDimension"
             src="https://raw.githubusercontent.com/miguelgargallo/Next13-Gallery-Image-Turbo/main/Data.pylar/Images/Pylar-v1.0/A_photography_of_the_earth__from_the_moon_on_a_fis_AAAGOLpA_RealESRGAN_x4plus.jpeg"

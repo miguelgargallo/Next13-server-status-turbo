@@ -612,7 +612,7 @@ var Version = () => {
       href: "http://twitter.com/miguelgargallo",
       target: "_blank",
       rel: "noopener noreferrer",
-      children: "v1.0.4"
+      children: "v1.0.0"
     })
   });
 };
@@ -7200,15 +7200,22 @@ var Menu = () => {
           /* @__PURE__ */ jsx4("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ jsx4("a", {
-              href: "/what-is-pylar",
-              children: "What is Pylar"
+              href: "/app",
+              children: "App"
             })
           }),
           /* @__PURE__ */ jsx4("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ jsx4("a", {
-              href: "/sales",
-              children: "Contact Sales"
+              href: "/dev",
+              children: "Dev"
+            })
+          }),
+          /* @__PURE__ */ jsx4("button", {
+            className: "rounded-xl py-2 px-4 font-bold text-white",
+            children: /* @__PURE__ */ jsx4("a", {
+              href: "/cloud",
+              children: "Cloud"
             })
           }),
           /* @__PURE__ */ jsx4("button", {
@@ -7221,15 +7228,8 @@ var Menu = () => {
           /* @__PURE__ */ jsx4("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
             children: /* @__PURE__ */ jsx4("a", {
-              href: "/pylar-license",
-              children: "The License"
-            })
-          }),
-          /* @__PURE__ */ jsx4("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx4("a", {
-              href: "/inverstors",
-              children: "Investors Relations"
+              href: "https://pylar.org",
+              children: "Pylar\u2122 AI"
             })
           }),
           /* @__PURE__ */ jsxs3("div", {
@@ -7259,9 +7259,9 @@ var Menu = () => {
   });
 };
 
-// src/TitlePylar.tsx
+// src/TitleSuperdata.tsx
 import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
-var TitlePylar = () => {
+var TitleSuperdata = () => {
   return /* @__PURE__ */ jsxs4("div", {
     children: [
       /* @__PURE__ */ jsx5("div", {
@@ -7360,73 +7360,18 @@ var TitlePylar = () => {
   });
 };
 
-// src/ListPylar.tsx
-import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
-var ListPylar = () => {
-  return /* @__PURE__ */ jsx6("div", {
-    className: "mt-8 flex flex-row justify-center",
-    children: /* @__PURE__ */ jsxs5("div", {
-      className: "flex w-3/4 flex-col",
-      children: [
-        /* @__PURE__ */ jsx6("h2", {
-          className: "text-2xl font-bold",
-          children: "Welcome to the Pylar AI Blog"
-        }),
-        /* @__PURE__ */ jsxs5("p", {
-          className: "mt-4 text-lg",
-          children: [
-            "Pylar AI is:",
-            /* @__PURE__ */ jsxs5("ul", {
-              className: "list-inside list-disc",
-              children: [
-                /* @__PURE__ */ jsx6("li", {
-                  children: "Generative art results"
-                }),
-                /* @__PURE__ */ jsx6("a", {
-                  children: "What is generative art? Generative art is a form of art that uses a computer to create art. The computer is programmed to create art based on a set of rules."
-                }),
-                /* @__PURE__ */ jsx6("p", {
-                  children: "\xA0"
-                }),
-                /* @__PURE__ */ jsx6("li", {
-                  children: "Promt Engineering design"
-                }),
-                /* @__PURE__ */ jsx6("a", {
-                  children: "Promt Engineering is a form of engineering that uses a computer to create engineering. The computer is programmed to create engineering based on a set of rules."
-                }),
-                /* @__PURE__ */ jsx6("p", {
-                  children: "\xA0"
-                }),
-                /* @__PURE__ */ jsx6("li", {
-                  children: "StableDiffusion 2.0 modified"
-                }),
-                /* @__PURE__ */ jsx6("a", {
-                  children: "StableDiffusion 2.0 is a computer program that is used to create art based on a set of rules."
-                }),
-                /* @__PURE__ */ jsx6("p", {
-                  children: "\xA0"
-                })
-              ]
-            })
-          ]
-        })
-      ]
-    })
-  });
-};
-
 // src/Footer.tsx
-import { jsx as jsx7, jsxs as jsxs6 } from "react/jsx-runtime";
+import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
 var Footer = () => {
-  return /* @__PURE__ */ jsxs6("footer", {
+  return /* @__PURE__ */ jsxs5("footer", {
     className: "bg-black py-8 text-center text-white",
     children: [
-      /* @__PURE__ */ jsx7("div", {
-        children: /* @__PURE__ */ jsxs6("a", {
+      /* @__PURE__ */ jsx6("div", {
+        children: /* @__PURE__ */ jsxs5("a", {
           children: [
             "Made with \u2764\uFE0F by",
             " ",
-            /* @__PURE__ */ jsx7("a", {
+            /* @__PURE__ */ jsx6("a", {
               href: "https://twitter.com/miguelgargallo",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7437,12 +7382,12 @@ var Footer = () => {
           ]
         })
       }),
-      /* @__PURE__ */ jsx7("div", {
-        children: /* @__PURE__ */ jsxs6("a", {
+      /* @__PURE__ */ jsx6("div", {
+        children: /* @__PURE__ */ jsxs5("a", {
           children: [
             "2022 \xA9",
             " ",
-            /* @__PURE__ */ jsx7("a", {
+            /* @__PURE__ */ jsx6("a", {
               href: "https://huggingface.co/spaces/superdatas/LICENSE",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7453,17 +7398,17 @@ var Footer = () => {
           ]
         })
       }),
-      /* @__PURE__ */ jsx7("div", {
+      /* @__PURE__ */ jsx6("div", {
         className: "hidden sm:block",
-        children: /* @__PURE__ */ jsx7("div", {
+        children: /* @__PURE__ */ jsx6("div", {
           className: "flex w-full items-center justify-center",
-          children: /* @__PURE__ */ jsx7("a", {
+          children: /* @__PURE__ */ jsx6("a", {
             href: "https://huggingface.co/spaces/superdatas/LICENSE",
             target: "_blank",
             rel: "noopener noreferrer",
             className: "hidden p-2 md:block",
-            children: /* @__PURE__ */ jsx7("picture", {
-              children: /* @__PURE__ */ jsx7("img", {
+            children: /* @__PURE__ */ jsx6("picture", {
+              children: /* @__PURE__ */ jsx6("img", {
                 src: "https://huggingface.co/front/assets/huggingface_logo.svg",
                 alt: "Landscape picture",
                 width: 40,
@@ -7473,7 +7418,7 @@ var Footer = () => {
           })
         })
       }),
-      /* @__PURE__ */ jsx7("p", {
+      /* @__PURE__ */ jsx6("p", {
         className: "text-white",
         children: "The Art of Prompting, tomorrow, today."
       })
@@ -7482,138 +7427,92 @@ var Footer = () => {
 };
 
 // src/Scrollable.tsx
-import { jsx as jsx8 } from "react/jsx-runtime";
+import { jsx as jsx7 } from "react/jsx-runtime";
 var Scrollable = () => {
   const { scrollYProgress } = useScroll();
-  return /* @__PURE__ */ jsx8(motion.div, {
+  return /* @__PURE__ */ jsx7(motion.div, {
     className: "progress-bar",
     style: { scaleX: scrollYProgress }
   });
 };
 
-// src/BlogPylar/blog.tsx
-import { jsx as jsx9 } from "react/jsx-runtime";
-var ELEMENTS3 = 5;
-var blog = () => {
-  return /* @__PURE__ */ jsx9("div", {
-    children: /* @__PURE__ */ jsx9("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
-      width: "95",
-      height: "95",
-      stroke: "#FFF",
-      "stroke-width": "0",
-      viewBox: "0 0 95 95",
-      className: "m-2 rounded-xl py-2 shadow-md hover:shadow-xl",
-      style: k(ELEMENTS3),
-      children: /* @__PURE__ */ jsx9("path", {
-        d: "M32.816,12.95,30.349,8.568h4.78a.439.439,0,0,1,.346.2l.931,1.534c.558.92,1.225,2.02,1.607,2.648ZM23.975,39.495a.339.339,0,0,1-.315.207H18.772l7.595-13.635a.731.731,0,0,0-.636-1.087h0L12.787,25l-2.574-4.456H29.076c.011,0,.02,0,.031,0a.677.677,0,0,0,.217-.045l.047-.02a.722.722,0,0,0,.346-.313l3.108-5.745h5.13Zm-6.468-.518-.613-1.009c-.785-1.3-1.791-2.955-1.9-3.137a.385.385,0,0,1,.024-.355l4.457-8.027,5.019-.006ZM8.948,30.444,6.453,26.011,8.968,21.3l2.522,4.367C10.706,27.14,9.483,29.442,8.948,30.444Zm-3.348.69H2.881a.443.443,0,0,1-.343-.2L1.726,29.6C1.147,28.641.409,27.425,0,26.752H5.2l2.466,4.383ZM14.037.208A.338.338,0,0,1,14.351,0h4.91L11.646,13.636c-.006.011-.01.023-.016.035s-.021.046-.03.07-.015.046-.021.069-.011.044-.014.066a.648.648,0,0,0-.008.081c0,.012,0,.023,0,.036s0,.018,0,.027a.591.591,0,0,0,.008.079.538.538,0,0,0,.012.066c.006.023.013.045.021.068s.016.045.025.066.021.041.033.062.023.04.037.059a.644.644,0,0,0,.045.055c.016.017.031.035.048.051s.035.029.053.043a.634.634,0,0,0,.063.045l.023.016c.008,0,.018.006.027.011a.729.729,0,0,0,.119.048c.015,0,.029.01.044.013a.7.7,0,0,0,.164.021h.33l12.619-.017c.334.58.957,1.673,1.489,2.6q.612,1.072,1.01,1.768H8.949c-.008,0-.016,0-.024,0a.725.725,0,0,0-.631.382L5.185,25.29H.059Zm6.479.534.456.75c.8,1.321,1.932,3.185,2.052,3.379A.383.383,0,0,1,23,5.227l-4.457,8.027-5.017.006Zm8.546,8.511,2.5,4.435-2.545,4.7c-.3-.529-.68-1.189-1.034-1.808-.7-1.224-1.208-2.115-1.495-2.613C27.028,12.977,28.462,10.349,29.062,9.253Z",
-        id: "Fill-1",
-        className: "fill-yellow-500"
-      })
-    })
-  });
-};
-
-// src/BlogPylar/post12032022.tsx
-import { jsx as jsx10 } from "react/jsx-runtime";
-var ELEMENTS4 = 5;
-var post12032022 = () => {
-  return /* @__PURE__ */ jsx10("div", {
-    children: /* @__PURE__ */ jsx10("svg", {
-      xmlns: "http://www.w3.org/2000/svg",
-      width: "95",
-      height: "95",
-      stroke: "#FFF",
-      "stroke-width": "0",
-      viewBox: "0 0 95 95",
-      className: "m-2 rounded-xl py-2 shadow-md hover:shadow-xl",
-      style: k(ELEMENTS4),
-      children: /* @__PURE__ */ jsx10("path", {
-        d: "M32.816,12.95,30.349,8.568h4.78a.439.439,0,0,1,.346.2l.931,1.534c.558.92,1.225,2.02,1.607,2.648ZM23.975,39.495a.339.339,0,0,1-.315.207H18.772l7.595-13.635a.731.731,0,0,0-.636-1.087h0L12.787,25l-2.574-4.456H29.076c.011,0,.02,0,.031,0a.677.677,0,0,0,.217-.045l.047-.02a.722.722,0,0,0,.346-.313l3.108-5.745h5.13Zm-6.468-.518-.613-1.009c-.785-1.3-1.791-2.955-1.9-3.137a.385.385,0,0,1,.024-.355l4.457-8.027,5.019-.006ZM8.948,30.444,6.453,26.011,8.968,21.3l2.522,4.367C10.706,27.14,9.483,29.442,8.948,30.444Zm-3.348.69H2.881a.443.443,0,0,1-.343-.2L1.726,29.6C1.147,28.641.409,27.425,0,26.752H5.2l2.466,4.383ZM14.037.208A.338.338,0,0,1,14.351,0h4.91L11.646,13.636c-.006.011-.01.023-.016.035s-.021.046-.03.07-.015.046-.021.069-.011.044-.014.066a.648.648,0,0,0-.008.081c0,.012,0,.023,0,.036s0,.018,0,.027a.591.591,0,0,0,.008.079.538.538,0,0,0,.012.066c.006.023.013.045.021.068s.016.045.025.066.021.041.033.062.023.04.037.059a.644.644,0,0,0,.045.055c.016.017.031.035.048.051s.035.029.053.043a.634.634,0,0,0,.063.045l.023.016c.008,0,.018.006.027.011a.729.729,0,0,0,.119.048c.015,0,.029.01.044.013a.7.7,0,0,0,.164.021h.33l12.619-.017c.334.58.957,1.673,1.489,2.6q.612,1.072,1.01,1.768H8.949c-.008,0-.016,0-.024,0a.725.725,0,0,0-.631.382L5.185,25.29H.059Zm6.479.534.456.75c.8,1.321,1.932,3.185,2.052,3.379A.383.383,0,0,1,23,5.227l-4.457,8.027-5.017.006Zm8.546,8.511,2.5,4.435-2.545,4.7c-.3-.529-.68-1.189-1.034-1.808-.7-1.224-1.208-2.115-1.495-2.613C27.028,12.977,28.462,10.349,29.062,9.253Z",
-        id: "Fill-1",
-        className: "fill-yellow-500"
-      })
-    })
-  });
-};
-
 // src/Contact.tsx
-import { jsx as jsx11, jsxs as jsxs7 } from "react/jsx-runtime";
+import { jsx as jsx8, jsxs as jsxs6 } from "react/jsx-runtime";
 var Contact = () => {
-  return /* @__PURE__ */ jsxs7("div", {
+  return /* @__PURE__ */ jsxs6("div", {
     className: "pylarDiv",
     children: [
-      /* @__PURE__ */ jsx11(motion.button, {
+      /* @__PURE__ */ jsx8(motion.button, {
         className: "pylarButtonEmailStyle",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1 },
-        children: /* @__PURE__ */ jsxs7("a", {
+        children: /* @__PURE__ */ jsxs6("a", {
           href: "mailto:sales@pylar.org",
           target: "_blank",
           rel: "noreferrer",
           children: [
             "Mail now",
-            /* @__PURE__ */ jsx11("span", {
+            /* @__PURE__ */ jsx8("span", {
               className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
               children: "\u2192"
             })
           ]
         })
       }),
-      /* @__PURE__ */ jsxs7("div", {
+      /* @__PURE__ */ jsxs6("div", {
         className: "pylarDiv",
         children: [
-          /* @__PURE__ */ jsx11(motion.button, {
+          /* @__PURE__ */ jsx8(motion.button, {
             className: "pylarButtonTwitterStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1 },
-            children: /* @__PURE__ */ jsxs7("a", {
+            children: /* @__PURE__ */ jsxs6("a", {
               href: "https://twitter.com/superdatas",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "MD Twitter now",
-                /* @__PURE__ */ jsx11("span", {
+                /* @__PURE__ */ jsx8("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ jsx11(motion.button, {
+          /* @__PURE__ */ jsx8(motion.button, {
             className: "pylarButtonWhatsappStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1.2 },
-            children: /* @__PURE__ */ jsxs7("a", {
+            children: /* @__PURE__ */ jsxs6("a", {
               href: "https://wa.me/+14077067844",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "Whatsapp now",
-                /* @__PURE__ */ jsx11("span", {
+                /* @__PURE__ */ jsx8("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ jsx11("div", {
+          /* @__PURE__ */ jsx8("div", {
             className: "pylarDiv",
-            children: /* @__PURE__ */ jsx11(motion.button, {
+            children: /* @__PURE__ */ jsx8(motion.button, {
               className: "pylarButtonTelegramStyle",
               initial: { opacity: 0 },
               animate: { opacity: 1 },
               transition: { delay: 1.4 },
-              children: /* @__PURE__ */ jsxs7("a", {
+              children: /* @__PURE__ */ jsxs6("a", {
                 href: "https://telegram.me/pencildomains",
                 target: "_blank",
                 rel: "noreferrer",
                 children: [
                   "Telegram Now",
-                  /* @__PURE__ */ jsx11("span", {
+                  /* @__PURE__ */ jsx8("span", {
                     className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                     children: "\u2192"
                   })
@@ -7626,150 +7525,13 @@ var Contact = () => {
     ]
   });
 };
-
-// src/Letter.tsx
-import { jsx as jsx12, jsxs as jsxs8 } from "react/jsx-runtime";
-var Letter = () => {
-  return /* @__PURE__ */ jsxs8("div", {
-    className: "text-jusitfy items-center p-16 text-white",
-    children: [
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2 text-2xl",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1 },
-        children: "Dear Investors,"
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2 text-2xl",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1 },
-        children: "I am writing to share with you the exciting progress that our organization, Pylar, has made in the field of AI technology. Through the use of stable diffusion algorithms and private models, we are able to generate high-quality generative images and other data, and offer a range of AI-powered solutions to our customers."
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.2 },
-        children: "Our prompt-based AI service allows users to provide specific input data and generate customized results. This enables our customers to fine-tune the results produced by our AI technology, ensuring that they meet their specific needs and requirements."
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.4 },
-        children: "We have seen significant interest in our technology from academic institutions and research organizations, who are looking for reliable and effective ways to generate high-quality data for their work. In addition to licensing our technology, we also generate revenue by selling the data produced by our AI, and through partnerships with academic institutions and research organizations."
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.6 },
-        children: "Our team of researchers and developers are dedicated to pushing the boundaries of what is possible with AI, and to developing innovative solutions that address real-world challenges. We have received recognition and awards from industry organizations and academic institutions for our work in the field, highlighting the high quality of our technology and our contributions to the advancement of AI."
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.8 },
-        children: "We are committed to continuing our work in AI technology, and to partnering with academic institutions and research organizations to drive innovation in the field. We believe that our technology has significant potential to generate value for our customers, and to support the development of new AI-powered tools and technologies."
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.8 },
-        children: "We appreciate your support and investment in our organization, and we look forward to sharing further updates on our progress in the future."
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.8 },
-        children: "Sincerely,"
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 2 },
-        children: "CEO of Pylar"
-      }),
-      /* @__PURE__ */ jsx12(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 2.2 },
-        children: "Miguel Gargallo"
-      })
-    ]
-  });
-};
-
-// src/Salestext.tsx
-import { jsx as jsx13, jsxs as jsxs9 } from "react/jsx-runtime";
-var Salestext = () => {
-  return /* @__PURE__ */ jsxs9("div", {
-    className: "text-jusitfy items-center p-16 text-white",
-    children: [
-      /* @__PURE__ */ jsx13(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1 },
-        children: "Are you looking for a reliable and effective way to generate high-quality generative images and other data? Look no further than Pylar, the leading research organization in the field of AI technology."
-      }),
-      /* @__PURE__ */ jsx13(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1 },
-        children: "Our state-of-the-art AI technology, powered by stable diffusion algorithms and private models, is capable of producing highly realistic and customizable results. Our prompt-based AI service allows users to provide specific input data and generate customized results, ensuring that they meet their specific needs and requirements."
-      }),
-      /* @__PURE__ */ jsx13(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.2 },
-        children: "Our technology has a wide range of potential applications, including the generation of images for use in research and publications, the creation of realistic simulations for testing and analysis, and the development of new AI-powered tools and technologies."
-      }),
-      /* @__PURE__ */ jsx13(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.4 },
-        children: "In addition to our AI technology, we also partner with academic institutions and research organizations to facilitate collaboration and knowledge sharing. Through these partnerships, we are able to stay at the forefront of AI research and development, and provide our customers with access to the latest advances in the field."
-      }),
-      /* @__PURE__ */ jsx13(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.6 },
-        children: "Our expertise in AI technology has also led to us receiving recognition and awards from industry organizations and academic institutions. This recognition highlights the high quality of our work and our contributions to the field of AI."
-      }),
-      /* @__PURE__ */ jsx13(motion.p, {
-        className: "m-2 p-2",
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { delay: 1.8 },
-        children: "Do not miss out on the opportunity to benefit from our cutting-edge AI technology. Contact us today to learn more about our products and services, and to discuss how we can help you achieve your goals."
-      })
-    ]
-  });
-};
 export {
   Button,
   Contact,
   Footer,
-  Letter,
-  ListPylar,
   Menu,
   MenuLogo,
-  Salestext,
   Scrollable,
-  TitlePylar,
-  Version,
-  blog,
-  post12032022
+  TitleSuperdata,
+  Version
 };

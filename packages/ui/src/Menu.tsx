@@ -30,19 +30,19 @@ export const Menu = () => {
           <a href="/black-holes">Discover Black Holes</a>
         </button>
         <button className="rounded-xl py-2 px-4 font-bold text-white">
-          <a href="/what-is-pylar">What is Pylar</a>
+          <a href="/app">App</a>
         </button>
         <button className="rounded-xl py-2 px-4 font-bold text-white">
-          <a href="/sales">Contact Sales</a>
+          <a href="/dev">Dev</a>
+        </button>
+        <button className="rounded-xl py-2 px-4 font-bold text-white">
+          <a href="/cloud">Cloud</a>
         </button>
         <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
           <a href="https://pencil.li">Pencil Domains&trade;</a>
         </button>
         <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a href="/pylar-license">The License</a>
-        </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a href="/inverstors">Investors Relations</a>
+          <a href="https://pylar.org">Pylar&trade; AI</a>
         </button>
         <div
           className="hidden py-2 px-4 font-bold text-white md:block"

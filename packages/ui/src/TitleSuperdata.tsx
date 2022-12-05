@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const TitlePylar = () => {
+export const TitleSuperdata = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center text-center">
