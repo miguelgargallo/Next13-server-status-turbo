@@ -35,6 +35,11 @@ export default function Home() {
                 SuperData is a high-quality, reliable server upstream service
                 provider that is part of the Pencil initiative.{" "}
               </p>
+              <div className="flex flex-col items-center justify-center py-8">
+                <button className="rounded-xl bg-gradient-to-r from-pink-500 to-yellow-500 py-2 px-4 font-bold text-black shadow-md hover:from-pink-800 hover:to-yellow-800 hover:text-white hover:shadow-xl">
+                  <a href="https://pencil.li">Pencil Domains&trade;</a>
+                </button>
+              </div>
             </div>
           </motion.div>
           <div className="superdataDiv">

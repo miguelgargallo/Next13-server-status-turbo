@@ -22,13 +22,7 @@ export const Menu = () => {
         style={{ scaleX: scrollYProgress }}
       />
       <div className="flex flex-row items-center justify-between bg-gradient-to-r from-black to-gray-800">
-        <MenuLogo />{" "}
-        <button
-          className="m-2 hidden rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block"
-          style={generateJSXMeshGradient(ELEMENTS)}
-        >
-          <a href="/black-holes">Discover Black Holes</a>
-        </button>
+        <MenuLogo />
         <button className="rounded-xl py-2 px-4 font-bold text-white">
           <a href="/app">App</a>
         </button>

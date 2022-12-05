@@ -627,7 +627,7 @@ var Version = () => {
       href: "http://twitter.com/miguelgargallo",
       target: "_blank",
       rel: "noopener noreferrer",
-      children: "v1.0.1"
+      children: "v1.0.2"
     })
   });
 };
@@ -7183,7 +7183,6 @@ function useScroll(_a = {}) {
 
 // src/Menu.tsx
 var import_jsx_runtime4 = require("react/jsx-runtime");
-var ELEMENTS2 = 12;
 {
   new Date().toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -7203,15 +7202,6 @@ var Menu = () => {
         className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-gray-800",
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(MenuLogo, {}),
-          " ",
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
-            className: "m-2 hidden rounded-full py-3 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
-            style: k(ELEMENTS2),
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
-              href: "/black-holes",
-              children: "Discover Black Holes"
-            })
-          }),
           /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
