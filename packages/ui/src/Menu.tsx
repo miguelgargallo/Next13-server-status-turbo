@@ -50,6 +50,15 @@ export const Menu = () => {
             Pylar&trade; AI
           </a>
         </button>
+        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
+          <a
+            href="https://superdatas.dev"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            SuperDatas&trade; AI
+          </a>
+        </button>
         <div
           className="hidden py-2 px-4 font-bold text-white md:block"
           style={{
