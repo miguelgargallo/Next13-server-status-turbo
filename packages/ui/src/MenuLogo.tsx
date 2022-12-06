@@ -1,7 +1,7 @@
 export const MenuLogo = () => {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <a href="https://pylar.org" className="m-2">
+      <a href="https://superdatas.org" className="m-2">
         <picture>
           <svg
             xmlns="http://www.w3.org/2000/svg"

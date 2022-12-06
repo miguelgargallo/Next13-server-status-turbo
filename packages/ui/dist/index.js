@@ -7124,22 +7124,8 @@ var Menu = () => {
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "/app",
-              children: "App"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "/dev",
-              children: "Dev"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "/cloud",
-              children: "Cloud"
+              href: "/",
+              children: "SuperData\u2122"
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
@@ -7163,10 +7149,10 @@ var Menu = () => {
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "https://superdatas.dev",
+              href: "https://itamaesan.org",
               target: "_blank",
               rel: "noopener noreferrer",
-              children: "SuperDatas\u2122 AI"
+              children: "ITAMAESAN\u2122"
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", {
@@ -7376,7 +7362,7 @@ var SuperdataLogo = () => {
     className: "m-2 hidden rounded-full text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
     style: k(ELEMENTS2),
     children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("a", {
-      href: "https://pylar.org",
+      href: "https://superdatas.org",
       className: "",
       children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("picture", {
         children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("svg", {
@@ -7468,7 +7454,43 @@ var Supermenu = () => {
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(PencilLogo, {}),
           /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(PylarLogo, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(SuperdataLogo, {})
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(SuperdataLogo, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+              href: "https://pencil.li",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: "Pencil Domains\u2122"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+              href: "https://pylar.org",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: "Pylar\u2122 AI"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+              href: "https://superdatas.dev",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: "SuperDatas\u2122 AI"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", {
+            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", {
+              href: "https://itamaesan.org",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: "ITAMAESAN\u2122"
+            })
+          })
         ]
       })
     ]
@@ -7481,7 +7503,7 @@ var MenuLogo = () => {
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", {
     className: "flex flex-col items-center justify-center text-center",
     children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", {
-      href: "https://pylar.org",
+      href: "https://superdatas.org",
       className: "m-2",
       children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("picture", {
         children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("svg", {
@@ -7567,7 +7589,7 @@ var TitleSuperdata = () => {
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", {
         className: "flex flex-col items-center justify-center text-center",
         children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", {
-          href: "https://pylar.org",
+          href: "https://superdatas.org",
           className: "m-2",
           children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("picture", {
             children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("svg", {
@@ -7650,7 +7672,7 @@ var TitleSuperdata = () => {
           animate: { opacity: 1 },
           transition: { delay: 0.5, duration: 1.5 },
           children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", {
-            href: "https://pylar.org",
+            href: "https://superdatas.org",
             className: "flex justify-center",
             children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("picture", {})
           })

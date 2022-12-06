@@ -17,6 +17,43 @@ export const Supermenu = () => {
         <PencilLogo />
         <PylarLogo />
         <SuperdataLogo />
+        
+        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
+          <a
+            href="https://pencil.li"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            Pencil Domains&trade;
+          </a>
+        </button>
+        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
+          <a
+            href="https://pylar.org"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            Pylar&trade; AI
+          </a>
+        </button>
+        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
+          <a
+            href="https://superdatas.dev"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            SuperDatas&trade; AI
+          </a>
+        </button>
+        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
+          <a
+            href="https://itamaesan.org"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            ITAMAESAN&trade;
+          </a>
+        </button>
       </div>
     </div>
   );

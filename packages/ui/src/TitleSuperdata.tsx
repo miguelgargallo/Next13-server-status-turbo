@@ -4,7 +4,7 @@ export const TitleSuperdata = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center text-center">
-        <a href="https://pylar.org" className="m-2">
+        <a href="https://superdatas.org" className="m-2">
           <picture>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export const TitleSuperdata = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1.5 }}
         >
-          <a href="https://pylar.org" className="flex justify-center">
+          <a href="https://superdatas.org" className="flex justify-center">
             <picture></picture>
           </a>
         </motion.span>

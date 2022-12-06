@@ -7,7 +7,7 @@ export const SuperdataLogo = () => {
       className="m-2 hidden rounded-full text-xs font-bold text-black shadow-md hover:shadow-xl md:block"
       style={generateJSXMeshGradient(ELEMENTS)}
     >
-      <a href="https://pylar.org" className="">
+      <a href="https://superdatas.org" className="">
         <picture>
           <svg
             xmlns="http://www.w3.org/2000/svg"
