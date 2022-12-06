@@ -2,13 +2,6 @@ import { Version } from "./Version";
 import { motion, useScroll } from "framer-motion";
 import "./styles.css";
 
-{
-  // show hour and minute locale
-  new Date().toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "numeric",
-  });
-}
 export const Menu = () => {
   const { scrollYProgress } = useScroll();
 

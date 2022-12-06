@@ -7103,12 +7103,6 @@ function useScroll(_a = {}) {
 
 // src/Menu.tsx
 var import_jsx_runtime3 = require("react/jsx-runtime");
-{
-  new Date().toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "numeric"
-  });
-}
 var Menu = () => {
   const { scrollYProgress } = useScroll();
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", {
