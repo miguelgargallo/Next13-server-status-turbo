@@ -21,3 +21,7 @@ export * from "./Contact";
 export * from "./PylarLogo";
 export * from "./SuperdataLogo";
 export * from "./PencilLogo";
+/* Logos */
+export * from "./TitleSuperdataCloud";
+export * from "./TitleSuperdataApp";
+export * from "./TitleSuperdataDev";
