@@ -542,7 +542,11 @@ __export(src_exports, {
   Footer: () => Footer,
   Menu: () => Menu,
   MenuLogo: () => MenuLogo,
+  PencilLogo: () => PencilLogo,
+  PylarLogo: () => PylarLogo,
   Scrollable: () => Scrollable,
+  SuperdataLogo: () => SuperdataLogo,
+  Supermenu: () => Supermenu,
   TitleSuperdata: () => TitleSuperdata,
   Version: () => Version
 });
@@ -627,91 +631,7 @@ var Version = () => {
       href: "http://twitter.com/miguelgargallo",
       target: "_blank",
       rel: "noopener noreferrer",
-      children: "v1.0.3"
-    })
-  });
-};
-
-// src/MenuLogo.tsx
-var import_jsx_runtime3 = require("react/jsx-runtime");
-var MenuLogo = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", {
-    className: "flex flex-col items-center justify-center text-center",
-    children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-      href: "https://pylar.org",
-      className: "m-2",
-      children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("picture", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
-          width: "150",
-          height: "25",
-          viewBox: "0 0 3500 678",
-          className: "m-3 h-6 w-24",
-          children: [
-            /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("defs", {}),
-            /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("g", {
-              fill: "#ffffff",
-              "fill-rule": "evenodd",
-              transform: "translate(-151 -173)",
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("path", {
-                  fill: "#ffffff",
-                  d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
-                  transform: "matrix(0 -1 -1 0 980 980)"
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("path", {
-                  fill: "#000000",
-                  d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
-                  transform: "matrix(0 -1 -1 0 905.5 905.5)"
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("path", {
-                  fill: "#000000",
-                  d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
-                  transform: "matrix(0 -1 -1 0 842.5 842.5)"
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("path", {
-                  fill: "#000000",
-                  d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
-                  transform: "matrix(0 -1 -1 0 779 779)"
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("path", {
-                  fill: "#000000",
-                  d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
-                  transform: "matrix(0 -1 -1 0 715.5 715.5)"
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("text", {
-                  fill: "#ffffff",
-                  "font-family": "Roboto, sans-serif",
-                  "font-size": "500",
-                  "font-weight": "500",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("tspan", {
-                    x: "993.25",
-                    y: "697",
-                    children: "SuperData\u2122"
-                  })
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("text", {
-                  fill: "#ffffff",
-                  "font-family": "Roboto, sans-serif",
-                  "font-size": "100",
-                  "font-weight": "500",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("tspan", {
-                    x: "690.95",
-                    y: "829",
-                    children: "\xA9"
-                  })
-                }),
-                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("text", {
-                  fill: "#ffffff",
-                  "font-family": "Roboto, sans-serif",
-                  "font-size": "75",
-                  "font-weight": "500"
-                })
-              ]
-            })
-          ]
-        })
-      })
+      children: "v1.9.8"
     })
   });
 };
@@ -7182,7 +7102,7 @@ function useScroll(_a = {}) {
 }
 
 // src/Menu.tsx
-var import_jsx_runtime4 = require("react/jsx-runtime");
+var import_jsx_runtime3 = require("react/jsx-runtime");
 {
   new Date().toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -7191,57 +7111,65 @@ var import_jsx_runtime4 = require("react/jsx-runtime");
 }
 var Menu = () => {
   const { scrollYProgress } = useScroll();
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", {
     className: "hidden sm:block",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(motion.div, {
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(motion.div, {
         className: "progress-bar",
         style: { scaleX: scrollYProgress }
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", {
         className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(MenuLogo, {}),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "/app",
               children: "App"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "/dev",
               children: "Dev"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "/cloud",
               children: "Cloud"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "https://pencil.li",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Pencil Domains\u2122"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "https://pylar.org",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Pylar\u2122 AI"
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
+            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
+              href: "https://superdatas.dev",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              children: "SuperDatas\u2122 AI"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", {
             className: "hidden py-2 px-4 font-bold text-white md:block",
             style: {
               display: "flex",
@@ -7250,16 +7178,16 @@ var Menu = () => {
             },
             children: [
               " ",
-              /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", {
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
                 className: "hidden py-2 px-4 font-bold text-white md:block",
-                children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+                children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
                   href: "http://twitter.com/superdatas",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   children: "Twitter"
                 })
               }),
-              /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Version, {})
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Version, {})
             ]
           })
         ]
@@ -7268,78 +7196,441 @@ var Menu = () => {
   });
 };
 
-// src/TitleSuperdata.tsx
+// src/PencilLogo.tsx
+var import_jsx_runtime4 = require("react/jsx-runtime");
+var PencilLogo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", {
+    className: "flex flex-col items-center justify-center text-center",
+    children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("a", {
+      href: "https://pencil.li",
+      className: "",
+      children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("picture", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "150",
+          height: "25",
+          viewBox: "0 0 2344 678",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("defs", {}),
+            /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("g", {
+              fill: "#be0aff",
+              "fill-rule": "evenodd",
+              transform: "translate(-151 -173)",
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+                  fill: "#be0aff",
+                  d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
+                  transform: "matrix(0 -1 -1 0 980 980)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+                  fill: "#147df5",
+                  d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
+                  transform: "matrix(0 -1 -1 0 905.5 905.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+                  fill: "#0aff99",
+                  d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
+                  transform: "matrix(0 -1 -1 0 842.5 842.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+                  fill: "#deff0a",
+                  d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
+                  transform: "matrix(0 -1 -1 0 779 779)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+                  fill: "#ff0000",
+                  d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
+                  transform: "matrix(0 -1 -1 0 715.5 715.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "500",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("tspan", {
+                    x: "993.25",
+                    y: "697",
+                    children: "Pencil"
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "100",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("tspan", {
+                    x: "690.95",
+                    y: "829",
+                    children: "\xA9"
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "75",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("tspan", {
+                    x: "2386.5",
+                    y: "248",
+                    children: "TM"
+                  })
+                })
+              ]
+            })
+          ]
+        })
+      })
+    })
+  });
+};
+
+// src/PylarLogo.tsx
 var import_jsx_runtime5 = require("react/jsx-runtime");
-var TitleSuperdata = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", {
+var PylarLogo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", {
+    className: "flex flex-col items-center justify-center text-center",
+    children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
+      href: "https://pylar.org",
+      className: "m-2",
+      children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("picture", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "150",
+          height: "25",
+          viewBox: "0 0 3060 678",
+          className: "m-3 h-6 w-24",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("defs", {}),
+            /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("g", {
+              fill: "#000000",
+              "fill-rule": "evenodd",
+              transform: "translate(-151 -173)",
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                  fill: "#ffffff",
+                  d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
+                  transform: "matrix(0 -1 -1 0 980 980)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                  fill: "#000000",
+                  d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
+                  transform: "matrix(0 -1 -1 0 905.5 905.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                  fill: "#ffffff",
+                  d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
+                  transform: "matrix(0 -1 -1 0 842.5 842.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                  fill: "#000000",
+                  d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
+                  transform: "matrix(0 -1 -1 0 779 779)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                  fill: "#ffffff",
+                  d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
+                  transform: "matrix(0 -1 -1 0 715.5 715.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "500",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("tspan", {
+                    x: "993.25",
+                    y: "697",
+                    children: "Pylar\u2122 AI"
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "100",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("tspan", {
+                    x: "690.95",
+                    y: "829",
+                    children: "\xA9"
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "75",
+                  "font-weight": "500"
+                })
+              ]
+            })
+          ]
+        })
+      })
+    })
+  });
+};
+
+// src/SuperdataLogo.tsx
+var import_jsx_runtime6 = require("react/jsx-runtime");
+var ELEMENTS2 = 12;
+var SuperdataLogo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", {
+    className: "m-2 hidden rounded-full text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
+    style: k(ELEMENTS2),
+    children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("a", {
+      href: "https://pylar.org",
+      className: "",
+      children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("picture", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "150",
+          height: "25",
+          viewBox: "0 0 3060 678",
+          className: "m-3 h-6 w-24",
+          children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("g", {
+            fill: "#ffffff",
+            "fill-rule": "evenodd",
+            transform: "translate(-151 -173)",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("path", {
+                fill: "#ffffff",
+                d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
+                transform: "matrix(0 -1 -1 0 980 980)"
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("path", {
+                fill: "#147df5",
+                d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
+                transform: "matrix(0 -1 -1 0 905.5 905.5)"
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("path", {
+                fill: "#000000",
+                d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
+                transform: "matrix(0 -1 -1 0 842.5 842.5)"
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("path", {
+                fill: "#000000",
+                d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
+                transform: "matrix(0 -1 -1 0 779 779)"
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("path", {
+                fill: "#000000",
+                d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
+                transform: "matrix(0 -1 -1 0 715.5 715.5)"
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("text", {
+                fill: "#ffffff",
+                "font-family": "Roboto, sans-serif",
+                "font-size": "500",
+                "font-weight": "500",
+                children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("tspan", {
+                  x: "993.25",
+                  y: "697",
+                  className: "underline",
+                  children: "SuperData\u2122"
+                })
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("text", {
+                fill: "#ffffff",
+                "font-family": "Roboto, sans-serif",
+                "font-size": "100",
+                "font-weight": "500",
+                children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("tspan", {
+                  x: "690.95",
+                  y: "829",
+                  children: "\xA9"
+                })
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("text", {
+                fill: "#ffffff",
+                "font-family": "Roboto, sans-serif",
+                "font-size": "75",
+                "font-weight": "500"
+              })
+            ]
+          })
+        })
+      })
+    })
+  });
+};
+
+// src/Supermenu.tsx
+var import_jsx_runtime7 = require("react/jsx-runtime");
+var Supermenu = () => {
+  const { scrollYProgress } = useScroll();
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", {
+    className: "hidden sm:block",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(motion.div, {
+        className: "progress-bar",
+        style: { scaleX: scrollYProgress }
+      }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", {
+        className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-black",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(PencilLogo, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(PylarLogo, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(SuperdataLogo, {})
+        ]
+      })
+    ]
+  });
+};
+
+// src/MenuLogo.tsx
+var import_jsx_runtime8 = require("react/jsx-runtime");
+var MenuLogo = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", {
+    className: "flex flex-col items-center justify-center text-center",
+    children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", {
+      href: "https://pylar.org",
+      className: "m-2",
+      children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("picture", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("svg", {
+          xmlns: "http://www.w3.org/2000/svg",
+          width: "150",
+          height: "25",
+          viewBox: "0 0 3500 678",
+          className: "m-3 h-6 w-24",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("defs", {}),
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("g", {
+              fill: "#ffffff",
+              "fill-rule": "evenodd",
+              transform: "translate(-151 -173)",
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("path", {
+                  fill: "#ffffff",
+                  d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
+                  transform: "matrix(0 -1 -1 0 980 980)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("path", {
+                  fill: "#000000",
+                  d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
+                  transform: "matrix(0 -1 -1 0 905.5 905.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("path", {
+                  fill: "#000000",
+                  d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
+                  transform: "matrix(0 -1 -1 0 842.5 842.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("path", {
+                  fill: "#000000",
+                  d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
+                  transform: "matrix(0 -1 -1 0 779 779)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("path", {
+                  fill: "#000000",
+                  d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
+                  transform: "matrix(0 -1 -1 0 715.5 715.5)"
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "500",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("tspan", {
+                    x: "993.25",
+                    y: "697",
+                    children: "SuperData\u2122"
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "100",
+                  "font-weight": "500",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("tspan", {
+                    x: "690.95",
+                    y: "829",
+                    children: "\xA9"
+                  })
+                }),
+                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("text", {
+                  fill: "#ffffff",
+                  "font-family": "Roboto, sans-serif",
+                  "font-size": "75",
+                  "font-weight": "500"
+                })
+              ]
+            })
+          ]
+        })
+      })
+    })
+  });
+};
+
+// src/TitleSuperdata.tsx
+var import_jsx_runtime9 = require("react/jsx-runtime");
+var TitleSuperdata = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", {
+    children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", {
         className: "flex flex-col items-center justify-center text-center",
-        children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", {
           href: "https://pylar.org",
           className: "m-2",
-          children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("picture", {
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("svg", {
+          children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("picture", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("svg", {
               xmlns: "http://www.w3.org/2000/svg",
               width: "300",
               height: "50",
               viewBox: "0 0 3450 678",
               className: "m-6 h-12 w-48",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("defs", {}),
-                /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("g", {
-                  fill: "#000000",
+                /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("defs", {}),
+                /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("g", {
+                  fill: "#ffffff",
                   "fill-rule": "evenodd",
                   transform: "translate(-151 -173)",
                   children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("path", {
                       fill: "#ffffff",
                       d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
                       transform: "matrix(0 -1 -1 0 980 980)"
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
-                      fill: "#000000",
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("path", {
+                      fill: "#147df5",
                       d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
                       transform: "matrix(0 -1 -1 0 905.5 905.5)"
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("path", {
                       fill: "#000000",
                       d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                       transform: "matrix(0 -1 -1 0 842.5 842.5)"
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("path", {
                       fill: "#000000",
                       d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
                       transform: "matrix(0 -1 -1 0 779 779)"
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("path", {
                       fill: "#000000",
                       d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                       transform: "matrix(0 -1 -1 0 715.5 715.5)"
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("text", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("text", {
                       fill: "#ffffff",
                       "font-family": "Roboto, sans-serif",
                       "font-size": "500",
                       "font-weight": "500",
-                      children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("tspan", {
+                      children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tspan", {
                         x: "993.25",
                         y: "697",
                         children: "SuperData\u2122"
                       })
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("text", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("text", {
                       fill: "#ffffff",
                       "font-family": "Roboto, sans-serif",
                       "font-size": "100",
                       "font-weight": "500",
-                      children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("tspan", {
+                      children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tspan", {
                         x: "690.95",
                         y: "829",
                         children: "\xA9"
                       })
                     }),
-                    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("text", {
+                    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("text", {
                       fill: "#ffffff",
                       "font-family": "Roboto, sans-serif",
                       "font-size": "75",
@@ -7352,16 +7643,16 @@ var TitleSuperdata = () => {
           })
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h1", {
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h1", {
         className: "text-center text-5xl font-bold text-white",
-        children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(motion.span, {
+        children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(motion.span, {
           initial: { opacity: 0 },
           animate: { opacity: 1 },
           transition: { delay: 0.5, duration: 1.5 },
-          children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("a", {
+          children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", {
             href: "https://pylar.org",
             className: "flex justify-center",
-            children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("picture", {})
+            children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("picture", {})
           })
         })
       })
@@ -7370,17 +7661,17 @@ var TitleSuperdata = () => {
 };
 
 // src/Footer.tsx
-var import_jsx_runtime6 = require("react/jsx-runtime");
+var import_jsx_runtime10 = require("react/jsx-runtime");
 var Footer = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("footer", {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("footer", {
     className: "bg-black py-8 text-center text-white",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("a", {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
           children: [
             "Made with \u2764\uFE0F by",
             " ",
-            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("a", {
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
               href: "https://twitter.com/miguelgargallo",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7391,12 +7682,12 @@ var Footer = () => {
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("a", {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
           children: [
             "2022 \xA9",
             " ",
-            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("a", {
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
               href: "https://huggingface.co/spaces/superdatas/LICENSE",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7407,17 +7698,17 @@ var Footer = () => {
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
         className: "hidden sm:block",
-        children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
           className: "flex w-full items-center justify-center",
-          children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("a", {
+          children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
             href: "https://huggingface.co/spaces/superdatas/LICENSE",
             target: "_blank",
             rel: "noopener noreferrer",
             className: "hidden p-2 md:block",
-            children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("picture", {
-              children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("img", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("picture", {
+              children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("img", {
                 src: "https://huggingface.co/front/assets/huggingface_logo.svg",
                 alt: "Landscape picture",
                 width: 40,
@@ -7427,7 +7718,7 @@ var Footer = () => {
           })
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("p", {
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", {
         className: "text-white",
         children: "SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil."
       })
@@ -7436,92 +7727,92 @@ var Footer = () => {
 };
 
 // src/Scrollable.tsx
-var import_jsx_runtime7 = require("react/jsx-runtime");
+var import_jsx_runtime11 = require("react/jsx-runtime");
 var Scrollable = () => {
   const { scrollYProgress } = useScroll();
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(motion.div, {
+  return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.div, {
     className: "progress-bar",
     style: { scaleX: scrollYProgress }
   });
 };
 
 // src/Contact.tsx
-var import_jsx_runtime8 = require("react/jsx-runtime");
+var import_jsx_runtime12 = require("react/jsx-runtime");
 var Contact = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", {
+  return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", {
     className: "pylarDiv",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(motion.button, {
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
         className: "pylarButtonEmailStyle",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1 },
-        children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("a", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
           href: "mailto:sales@pylar.org",
           target: "_blank",
           rel: "noreferrer",
           children: [
             "Mail now",
-            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", {
+            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
               className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
               children: "\u2192"
             })
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", {
         className: "pylarDiv",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(motion.button, {
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
             className: "pylarButtonTwitterStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1 },
-            children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
               href: "https://twitter.com/superdatas",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "MD Twitter now",
-                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", {
+                /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(motion.button, {
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
             className: "pylarButtonWhatsappStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1.2 },
-            children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
               href: "https://wa.me/+14077067844",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "Whatsapp now",
-                /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", {
+                /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", {
             className: "pylarDiv",
-            children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(motion.button, {
+            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
               className: "pylarButtonTelegramStyle",
               initial: { opacity: 0 },
               animate: { opacity: 1 },
               transition: { delay: 1.4 },
-              children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("a", {
+              children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
                 href: "https://telegram.me/pencildomains",
                 target: "_blank",
                 rel: "noreferrer",
                 children: [
                   "Telegram Now",
-                  /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", {
+                  /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
                     className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                     children: "\u2192"
                   })
@@ -7541,7 +7832,11 @@ var Contact = () => {
   Footer,
   Menu,
   MenuLogo,
+  PencilLogo,
+  PylarLogo,
   Scrollable,
+  SuperdataLogo,
+  Supermenu,
   TitleSuperdata,
   Version
 });

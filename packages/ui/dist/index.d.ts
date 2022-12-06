@@ -2,6 +2,8 @@ declare const Button: () => JSX.Element;
 
 declare const Menu: () => JSX.Element;
 
+declare const Supermenu: () => JSX.Element;
+
 declare const MenuLogo: () => JSX.Element;
 
 declare const TitleSuperdata: () => JSX.Element;
@@ -14,4 +16,10 @@ declare const Scrollable: () => JSX.Element;
 
 declare const Contact: () => JSX.Element;
 
-export { Button, Contact, Footer, Menu, MenuLogo, Scrollable, TitleSuperdata, Version };
+declare const PylarLogo: () => JSX.Element;
+
+declare const SuperdataLogo: () => JSX.Element;
+
+declare const PencilLogo: () => JSX.Element;
+
+export { Button, Contact, Footer, Menu, MenuLogo, PencilLogo, PylarLogo, Scrollable, SuperdataLogo, Supermenu, TitleSuperdata, Version };
