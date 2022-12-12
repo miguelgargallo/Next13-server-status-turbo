@@ -3,7 +3,7 @@ import * as React from "react";
 export * from "./Button";
 // Menu
 export * from "./Menu";
-export * from "./Supermenu";
+export * from "./MenuAlpha";
 // Logo
 export * from "./MenuLogo";
 // Title and subtitle
