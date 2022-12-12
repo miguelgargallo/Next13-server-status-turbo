@@ -7098,34 +7098,34 @@ var Menu = () => {
       }),
       /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(MenuAlpha, {}),
       /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", {
-        className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700",
+        className: "flex flex-row items-center justify-between bg-gradient-to-r from-blue-400 to-blue-500",
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "/",
-              children: "SuperData\u2122"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
+            className: "px-8 py-2 underline font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "/app",
-              children: "App"
-            })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "/cloud",
               children: "Cloud"
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
+            className: "py-2 font-bold text-white",
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
+              href: "/cloud",
+              children: "App"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
+            className: "py-2 font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
               href: "/dev",
               children: "Dev"
+            })
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
+            className: "px-8 py-2 font-bold text-white",
+            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
+              href: "https://pencil.li",
+              children: "Pencil"
             })
           })
         ]

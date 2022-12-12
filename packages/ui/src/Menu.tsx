@@ -12,18 +12,22 @@ export const Menu = () => {
         style={{ scaleX: scrollYProgress }}
       />
       <MenuAlpha />
-      <div className="flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700">
-        <button className="rounded-xl py-2 px-4 font-bold text-white">
-          <a href="/">SuperData&trade;</a>
+      <div className="flex flex-row items-center justify-between bg-gradient-to-r from-blue-400 to-blue-500">
+        <button className="px-8 py-2 underline font-bold text-white">
+          <a href="/app"
+          >Cloud</a>
         </button>
-        <button className="rounded-xl py-2 px-4 font-bold text-white">
-          <a href="/app">App</a>
+        <button className="py-2 font-bold text-white">
+          <a href="/cloud"
+          >App</a>
         </button>
-        <button className="rounded-xl py-2 px-4 font-bold text-white">
-          <a href="/cloud">Cloud</a>
+        <button className="py-2 font-bold text-white">
+          <a href="/dev"
+          >Dev</a>
         </button>
-        <button className="rounded-xl py-2 px-4 font-bold text-white">
-          <a href="/dev">Dev</a>
+        <button className="px-8 py-2 font-bold text-white">
+          <a href="https://pencil.li"
+          >Pencil</a>
         </button>
       </div>
     </div>

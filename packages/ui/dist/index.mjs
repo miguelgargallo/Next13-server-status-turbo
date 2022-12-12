@@ -7078,34 +7078,34 @@ var Menu = () => {
       }),
       /* @__PURE__ */ jsx3(MenuAlpha, {}),
       /* @__PURE__ */ jsxs3("div", {
-        className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700",
+        className: "flex flex-row items-center justify-between bg-gradient-to-r from-blue-400 to-blue-500",
         children: [
           /* @__PURE__ */ jsx3("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ jsx3("a", {
-              href: "/",
-              children: "SuperData\u2122"
-            })
-          }),
-          /* @__PURE__ */ jsx3("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
+            className: "px-8 py-2 underline font-bold text-white",
             children: /* @__PURE__ */ jsx3("a", {
               href: "/app",
-              children: "App"
-            })
-          }),
-          /* @__PURE__ */ jsx3("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ jsx3("a", {
-              href: "/cloud",
               children: "Cloud"
             })
           }),
           /* @__PURE__ */ jsx3("button", {
-            className: "rounded-xl py-2 px-4 font-bold text-white",
+            className: "py-2 font-bold text-white",
+            children: /* @__PURE__ */ jsx3("a", {
+              href: "/cloud",
+              children: "App"
+            })
+          }),
+          /* @__PURE__ */ jsx3("button", {
+            className: "py-2 font-bold text-white",
             children: /* @__PURE__ */ jsx3("a", {
               href: "/dev",
               children: "Dev"
+            })
+          }),
+          /* @__PURE__ */ jsx3("button", {
+            className: "px-8 py-2 font-bold text-white",
+            children: /* @__PURE__ */ jsx3("a", {
+              href: "https://pencil.li",
+              children: "Pencil"
             })
           })
         ]
