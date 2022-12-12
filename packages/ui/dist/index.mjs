@@ -554,69 +554,6 @@ var Button = () => {
   });
 };
 
-// ../../node_modules/meshgrad/dist/index.mjs
-var i = () => Math.round(Math.random() * 360);
-var c = (n) => Math.round(Math.random() * (n * 100) % 100);
-var g = (n, t, e) => Math.round(t / e * (n * 100) % 100);
-var d = (n) => {
-  if (!!n) {
-    n = n.replace(/#/g, ""), n.length === 3 && (n = n.split("").map(function(b) {
-      return b + b;
-    }).join(""));
-    var t = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})[\da-z]{0,0}$/i.exec(n);
-    if (!!t) {
-      var e = parseInt(t[1], 16), r = parseInt(t[2], 16), a = parseInt(t[3], 16);
-      e /= 255, r /= 255, a /= 255;
-      var o = Math.max(e, r, a), s = Math.min(e, r, a), u = (o + s) / 2;
-      if (o == s)
-        u = 0;
-      else {
-        var m = o - s;
-        switch (o) {
-          case e:
-            u = (r - a) / m + (r < a ? 6 : 0);
-            break;
-          case r:
-            u = (a - e) / m + 2;
-            break;
-          case a:
-            u = (e - r) / m + 4;
-            break;
-        }
-        u /= 6;
-      }
-      return u = Math.round(360 * u), u;
-    }
-  }
-};
-var p = (n, t) => Array.from({ length: n }, (e, r) => r === 0 ? `hsl(${t}, 100%, 80%)` : r < n / 1.4 ? `hsl(${t - 30 * (1 - 2 * (r % 2)) * (r > 2 ? r / 2 : r)}, 100%, ${76 - r * (1 - 2 * (r % 2)) * 1.75}%)` : `hsl(${t - 150 * (1 - 2 * (r % 2))}, 100%, ${76 - r * (1 - 2 * (r % 2)) * 1.25}%)`);
-var M = (n, t, e) => Array.from({ length: n }, (r, a) => `radial-gradient(at ${e ? g(a, e, n) : c(a)}% ${e ? g(a * 10, e, n) : c(a * 10)}%, ${t[a]} 0px, transparent 50%)
-`);
-var f = (n, t, e) => {
-  let r = p(n, t || i()), a = M(n, r, e || void 0);
-  return [r[0], a.join(",")];
-};
-var k = (n, t, e) => {
-  let [r, a] = f(n, d(t) ? d(t) : void 0, e || void 0);
-  return { backgroundColor: r, backgroundImage: a };
-};
-
-// src/Version.tsx
-import { jsx as jsx2 } from "react/jsx-runtime";
-var ELEMENTS = 1;
-var Version = () => {
-  return /* @__PURE__ */ jsx2("button", {
-    className: "m-2 hidden rounded-full py-2 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
-    style: k(ELEMENTS),
-    children: /* @__PURE__ */ jsx2("a", {
-      href: "http://twitter.com/miguelgargallo",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      children: "v1.9.8"
-    })
-  });
-};
-
 // ../../node_modules/framer-motion/dist/es/motion/index.mjs
 import * as React from "react";
 import { forwardRef, useContext as useContext4 } from "react";
@@ -7083,73 +7020,52 @@ function useScroll(_a = {}) {
 }
 
 // src/Menu.tsx
-import { jsx as jsx3, jsxs as jsxs2 } from "react/jsx-runtime";
+import { jsx as jsx2, jsxs as jsxs2 } from "react/jsx-runtime";
 var Menu = () => {
   const { scrollYProgress } = useScroll();
   return /* @__PURE__ */ jsxs2("div", {
     className: "hidden sm:block",
     children: [
-      /* @__PURE__ */ jsx3(motion.div, {
+      /* @__PURE__ */ jsx2(motion.div, {
         className: "progress-bar",
         style: { scaleX: scrollYProgress }
       }),
       /* @__PURE__ */ jsxs2("div", {
         className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-green-700",
         children: [
-          /* @__PURE__ */ jsx3("button", {
+          /* @__PURE__ */ jsx2("button", {
             className: "rounded-xl py-2 px-4 font-bold text-white",
-            children: /* @__PURE__ */ jsx3("a", {
+            children: /* @__PURE__ */ jsx2("a", {
               href: "/",
               children: "SuperData\u2122"
             })
           }),
-          /* @__PURE__ */ jsx3("button", {
+          /* @__PURE__ */ jsx2("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx3("a", {
+            children: /* @__PURE__ */ jsx2("a", {
               href: "https://pencil.li",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Pencil Domains\u2122"
             })
           }),
-          /* @__PURE__ */ jsx3("button", {
+          /* @__PURE__ */ jsx2("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx3("a", {
+            children: /* @__PURE__ */ jsx2("a", {
               href: "https://pylar.org",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Pylar\u2122 AI"
             })
           }),
-          /* @__PURE__ */ jsx3("button", {
+          /* @__PURE__ */ jsx2("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx3("a", {
+            children: /* @__PURE__ */ jsx2("a", {
               href: "https://itamaesan.org",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "ITAMAESAN\u2122"
             })
-          }),
-          /* @__PURE__ */ jsxs2("div", {
-            className: "hidden py-2 px-4 font-bold text-white md:block",
-            style: {
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center"
-            },
-            children: [
-              " ",
-              /* @__PURE__ */ jsx3("button", {
-                className: "hidden py-2 px-4 font-bold text-white md:block",
-                children: /* @__PURE__ */ jsx3("a", {
-                  href: "http://twitter.com/superdatas",
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  children: "Twitter"
-                })
-              }),
-              /* @__PURE__ */ jsx3(Version, {})
-            ]
           })
         ]
       })
@@ -7158,79 +7074,79 @@ var Menu = () => {
 };
 
 // src/PencilLogo.tsx
-import { jsx as jsx4, jsxs as jsxs3 } from "react/jsx-runtime";
+import { jsx as jsx3, jsxs as jsxs3 } from "react/jsx-runtime";
 var PencilLogo = () => {
-  return /* @__PURE__ */ jsx4("div", {
+  return /* @__PURE__ */ jsx3("div", {
     className: "flex flex-col items-center justify-center text-center",
-    children: /* @__PURE__ */ jsx4("a", {
+    children: /* @__PURE__ */ jsx3("a", {
       href: "https://pencil.li",
       className: "",
-      children: /* @__PURE__ */ jsx4("picture", {
+      children: /* @__PURE__ */ jsx3("picture", {
         children: /* @__PURE__ */ jsxs3("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "150",
           height: "25",
           viewBox: "0 0 2344 678",
           children: [
-            /* @__PURE__ */ jsx4("defs", {}),
+            /* @__PURE__ */ jsx3("defs", {}),
             /* @__PURE__ */ jsxs3("g", {
               fill: "#be0aff",
               "fill-rule": "evenodd",
               transform: "translate(-151 -173)",
               children: [
-                /* @__PURE__ */ jsx4("path", {
+                /* @__PURE__ */ jsx3("path", {
                   fill: "#be0aff",
                   d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
                   transform: "matrix(0 -1 -1 0 980 980)"
                 }),
-                /* @__PURE__ */ jsx4("path", {
+                /* @__PURE__ */ jsx3("path", {
                   fill: "#147df5",
                   d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
                   transform: "matrix(0 -1 -1 0 905.5 905.5)"
                 }),
-                /* @__PURE__ */ jsx4("path", {
+                /* @__PURE__ */ jsx3("path", {
                   fill: "#0aff99",
                   d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                   transform: "matrix(0 -1 -1 0 842.5 842.5)"
                 }),
-                /* @__PURE__ */ jsx4("path", {
+                /* @__PURE__ */ jsx3("path", {
                   fill: "#deff0a",
                   d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
                   transform: "matrix(0 -1 -1 0 779 779)"
                 }),
-                /* @__PURE__ */ jsx4("path", {
+                /* @__PURE__ */ jsx3("path", {
                   fill: "#ff0000",
                   d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                   transform: "matrix(0 -1 -1 0 715.5 715.5)"
                 }),
-                /* @__PURE__ */ jsx4("text", {
+                /* @__PURE__ */ jsx3("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "500",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx4("tspan", {
+                  children: /* @__PURE__ */ jsx3("tspan", {
                     x: "993.25",
                     y: "697",
                     children: "Pencil"
                   })
                 }),
-                /* @__PURE__ */ jsx4("text", {
+                /* @__PURE__ */ jsx3("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "100",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx4("tspan", {
+                  children: /* @__PURE__ */ jsx3("tspan", {
                     x: "690.95",
                     y: "829",
                     children: "\xA9"
                   })
                 }),
-                /* @__PURE__ */ jsx4("text", {
+                /* @__PURE__ */ jsx3("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "75",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx4("tspan", {
+                  children: /* @__PURE__ */ jsx3("tspan", {
                     x: "2386.5",
                     y: "248",
                     children: "TM"
@@ -7246,14 +7162,14 @@ var PencilLogo = () => {
 };
 
 // src/PylarLogo.tsx
-import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
+import { jsx as jsx4, jsxs as jsxs4 } from "react/jsx-runtime";
 var PylarLogo = () => {
-  return /* @__PURE__ */ jsx5("div", {
+  return /* @__PURE__ */ jsx4("div", {
     className: "flex flex-col items-center justify-center text-center",
-    children: /* @__PURE__ */ jsx5("a", {
+    children: /* @__PURE__ */ jsx4("a", {
       href: "https://pylar.org",
       className: "m-2",
-      children: /* @__PURE__ */ jsx5("picture", {
+      children: /* @__PURE__ */ jsx4("picture", {
         children: /* @__PURE__ */ jsxs4("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "150",
@@ -7261,60 +7177,60 @@ var PylarLogo = () => {
           viewBox: "0 0 3060 678",
           className: "m-3 h-6 w-24",
           children: [
-            /* @__PURE__ */ jsx5("defs", {}),
+            /* @__PURE__ */ jsx4("defs", {}),
             /* @__PURE__ */ jsxs4("g", {
               fill: "#000000",
               "fill-rule": "evenodd",
               transform: "translate(-151 -173)",
               children: [
-                /* @__PURE__ */ jsx5("path", {
+                /* @__PURE__ */ jsx4("path", {
                   fill: "#ffffff",
                   d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
                   transform: "matrix(0 -1 -1 0 980 980)"
                 }),
-                /* @__PURE__ */ jsx5("path", {
+                /* @__PURE__ */ jsx4("path", {
                   fill: "#000000",
                   d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
                   transform: "matrix(0 -1 -1 0 905.5 905.5)"
                 }),
-                /* @__PURE__ */ jsx5("path", {
+                /* @__PURE__ */ jsx4("path", {
                   fill: "#ffffff",
                   d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                   transform: "matrix(0 -1 -1 0 842.5 842.5)"
                 }),
-                /* @__PURE__ */ jsx5("path", {
+                /* @__PURE__ */ jsx4("path", {
                   fill: "#000000",
                   d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
                   transform: "matrix(0 -1 -1 0 779 779)"
                 }),
-                /* @__PURE__ */ jsx5("path", {
+                /* @__PURE__ */ jsx4("path", {
                   fill: "#ffffff",
                   d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                   transform: "matrix(0 -1 -1 0 715.5 715.5)"
                 }),
-                /* @__PURE__ */ jsx5("text", {
+                /* @__PURE__ */ jsx4("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "500",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx5("tspan", {
+                  children: /* @__PURE__ */ jsx4("tspan", {
                     x: "993.25",
                     y: "697",
                     children: "Pylar\u2122 AI"
                   })
                 }),
-                /* @__PURE__ */ jsx5("text", {
+                /* @__PURE__ */ jsx4("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "100",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx5("tspan", {
+                  children: /* @__PURE__ */ jsx4("tspan", {
                     x: "690.95",
                     y: "829",
                     children: "\xA9"
                   })
                 }),
-                /* @__PURE__ */ jsx5("text", {
+                /* @__PURE__ */ jsx4("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "75",
@@ -7329,18 +7245,65 @@ var PylarLogo = () => {
   });
 };
 
+// ../../node_modules/meshgrad/dist/index.mjs
+var i = () => Math.round(Math.random() * 360);
+var c = (n) => Math.round(Math.random() * (n * 100) % 100);
+var g = (n, t, e) => Math.round(t / e * (n * 100) % 100);
+var d = (n) => {
+  if (!!n) {
+    n = n.replace(/#/g, ""), n.length === 3 && (n = n.split("").map(function(b) {
+      return b + b;
+    }).join(""));
+    var t = /^([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})[\da-z]{0,0}$/i.exec(n);
+    if (!!t) {
+      var e = parseInt(t[1], 16), r = parseInt(t[2], 16), a = parseInt(t[3], 16);
+      e /= 255, r /= 255, a /= 255;
+      var o = Math.max(e, r, a), s = Math.min(e, r, a), u = (o + s) / 2;
+      if (o == s)
+        u = 0;
+      else {
+        var m = o - s;
+        switch (o) {
+          case e:
+            u = (r - a) / m + (r < a ? 6 : 0);
+            break;
+          case r:
+            u = (a - e) / m + 2;
+            break;
+          case a:
+            u = (e - r) / m + 4;
+            break;
+        }
+        u /= 6;
+      }
+      return u = Math.round(360 * u), u;
+    }
+  }
+};
+var p = (n, t) => Array.from({ length: n }, (e, r) => r === 0 ? `hsl(${t}, 100%, 80%)` : r < n / 1.4 ? `hsl(${t - 30 * (1 - 2 * (r % 2)) * (r > 2 ? r / 2 : r)}, 100%, ${76 - r * (1 - 2 * (r % 2)) * 1.75}%)` : `hsl(${t - 150 * (1 - 2 * (r % 2))}, 100%, ${76 - r * (1 - 2 * (r % 2)) * 1.25}%)`);
+var M = (n, t, e) => Array.from({ length: n }, (r, a) => `radial-gradient(at ${e ? g(a, e, n) : c(a)}% ${e ? g(a * 10, e, n) : c(a * 10)}%, ${t[a]} 0px, transparent 50%)
+`);
+var f = (n, t, e) => {
+  let r = p(n, t || i()), a = M(n, r, e || void 0);
+  return [r[0], a.join(",")];
+};
+var k = (n, t, e) => {
+  let [r, a] = f(n, d(t) ? d(t) : void 0, e || void 0);
+  return { backgroundColor: r, backgroundImage: a };
+};
+
 // src/SuperdataLogo.tsx
-import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
-var ELEMENTS2 = 12;
+import { jsx as jsx5, jsxs as jsxs5 } from "react/jsx-runtime";
+var ELEMENTS = 12;
 var SuperdataLogo = () => {
-  return /* @__PURE__ */ jsx6("div", {
+  return /* @__PURE__ */ jsx5("div", {
     className: "m-2 hidden rounded-full text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
-    style: k(ELEMENTS2),
-    children: /* @__PURE__ */ jsx6("a", {
+    style: k(ELEMENTS),
+    children: /* @__PURE__ */ jsx5("a", {
       href: "https://superdatas.org",
       className: "",
-      children: /* @__PURE__ */ jsx6("picture", {
-        children: /* @__PURE__ */ jsx6("svg", {
+      children: /* @__PURE__ */ jsx5("picture", {
+        children: /* @__PURE__ */ jsx5("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "150",
           height: "25",
@@ -7351,55 +7314,55 @@ var SuperdataLogo = () => {
             "fill-rule": "evenodd",
             transform: "translate(-151 -173)",
             children: [
-              /* @__PURE__ */ jsx6("path", {
+              /* @__PURE__ */ jsx5("path", {
                 fill: "#ffffff",
                 d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
                 transform: "matrix(0 -1 -1 0 980 980)"
               }),
-              /* @__PURE__ */ jsx6("path", {
+              /* @__PURE__ */ jsx5("path", {
                 fill: "#147df5",
                 d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
                 transform: "matrix(0 -1 -1 0 905.5 905.5)"
               }),
-              /* @__PURE__ */ jsx6("path", {
+              /* @__PURE__ */ jsx5("path", {
                 fill: "#000000",
                 d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                 transform: "matrix(0 -1 -1 0 842.5 842.5)"
               }),
-              /* @__PURE__ */ jsx6("path", {
+              /* @__PURE__ */ jsx5("path", {
                 fill: "#000000",
                 d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
                 transform: "matrix(0 -1 -1 0 779 779)"
               }),
-              /* @__PURE__ */ jsx6("path", {
+              /* @__PURE__ */ jsx5("path", {
                 fill: "#000000",
                 d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                 transform: "matrix(0 -1 -1 0 715.5 715.5)"
               }),
-              /* @__PURE__ */ jsx6("text", {
+              /* @__PURE__ */ jsx5("text", {
                 fill: "#ffffff",
                 "font-family": "Roboto, sans-serif",
                 "font-size": "500",
                 "font-weight": "500",
-                children: /* @__PURE__ */ jsx6("tspan", {
+                children: /* @__PURE__ */ jsx5("tspan", {
                   x: "993.25",
                   y: "697",
                   className: "underline",
                   children: "SuperData\u2122"
                 })
               }),
-              /* @__PURE__ */ jsx6("text", {
+              /* @__PURE__ */ jsx5("text", {
                 fill: "#ffffff",
                 "font-family": "Roboto, sans-serif",
                 "font-size": "100",
                 "font-weight": "500",
-                children: /* @__PURE__ */ jsx6("tspan", {
+                children: /* @__PURE__ */ jsx5("tspan", {
                   x: "690.95",
                   y: "829",
                   children: "\xA9"
                 })
               }),
-              /* @__PURE__ */ jsx6("text", {
+              /* @__PURE__ */ jsx5("text", {
                 fill: "#ffffff",
                 "font-family": "Roboto, sans-serif",
                 "font-size": "75",
@@ -7414,52 +7377,52 @@ var SuperdataLogo = () => {
 };
 
 // src/Supermenu.tsx
-import { jsx as jsx7, jsxs as jsxs6 } from "react/jsx-runtime";
+import { jsx as jsx6, jsxs as jsxs6 } from "react/jsx-runtime";
 var Supermenu = () => {
   const { scrollYProgress } = useScroll();
   return /* @__PURE__ */ jsxs6("div", {
     className: "hidden sm:block",
     children: [
-      /* @__PURE__ */ jsx7(motion.div, {
+      /* @__PURE__ */ jsx6(motion.div, {
         className: "progress-bar",
         style: { scaleX: scrollYProgress }
       }),
       /* @__PURE__ */ jsxs6("div", {
         className: "flex flex-row items-center justify-between bg-gradient-to-r from-black to-black",
         children: [
-          /* @__PURE__ */ jsx7(PencilLogo, {}),
-          /* @__PURE__ */ jsx7(PylarLogo, {}),
-          /* @__PURE__ */ jsx7(SuperdataLogo, {}),
-          /* @__PURE__ */ jsx7("button", {
+          /* @__PURE__ */ jsx6(PencilLogo, {}),
+          /* @__PURE__ */ jsx6(PylarLogo, {}),
+          /* @__PURE__ */ jsx6(SuperdataLogo, {}),
+          /* @__PURE__ */ jsx6("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx7("a", {
+            children: /* @__PURE__ */ jsx6("a", {
               href: "https://pencil.li",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Pencil Domains\u2122"
             })
           }),
-          /* @__PURE__ */ jsx7("button", {
+          /* @__PURE__ */ jsx6("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx7("a", {
+            children: /* @__PURE__ */ jsx6("a", {
               href: "https://pylar.org",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Pylar\u2122 AI"
             })
           }),
-          /* @__PURE__ */ jsx7("button", {
+          /* @__PURE__ */ jsx6("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx7("a", {
+            children: /* @__PURE__ */ jsx6("a", {
               href: "https://superdatas.dev",
               target: "_blank",
               rel: "noopener noreferrer",
               children: "SuperDatas\u2122 AI"
             })
           }),
-          /* @__PURE__ */ jsx7("button", {
+          /* @__PURE__ */ jsx6("button", {
             className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
-            children: /* @__PURE__ */ jsx7("a", {
+            children: /* @__PURE__ */ jsx6("a", {
               href: "https://itamaesan.org",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -7473,14 +7436,14 @@ var Supermenu = () => {
 };
 
 // src/MenuLogo.tsx
-import { jsx as jsx8, jsxs as jsxs7 } from "react/jsx-runtime";
+import { jsx as jsx7, jsxs as jsxs7 } from "react/jsx-runtime";
 var MenuLogo = () => {
-  return /* @__PURE__ */ jsx8("div", {
+  return /* @__PURE__ */ jsx7("div", {
     className: "flex flex-col items-center justify-center text-center",
-    children: /* @__PURE__ */ jsx8("a", {
+    children: /* @__PURE__ */ jsx7("a", {
       href: "https://superdatas.org",
       className: "m-2",
-      children: /* @__PURE__ */ jsx8("picture", {
+      children: /* @__PURE__ */ jsx7("picture", {
         children: /* @__PURE__ */ jsxs7("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "150",
@@ -7488,60 +7451,60 @@ var MenuLogo = () => {
           viewBox: "0 0 3500 678",
           className: "m-3 h-6 w-24",
           children: [
-            /* @__PURE__ */ jsx8("defs", {}),
+            /* @__PURE__ */ jsx7("defs", {}),
             /* @__PURE__ */ jsxs7("g", {
               fill: "#ffffff",
               "fill-rule": "evenodd",
               transform: "translate(-151 -173)",
               children: [
-                /* @__PURE__ */ jsx8("path", {
+                /* @__PURE__ */ jsx7("path", {
                   fill: "#ffffff",
                   d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
                   transform: "matrix(0 -1 -1 0 980 980)"
                 }),
-                /* @__PURE__ */ jsx8("path", {
+                /* @__PURE__ */ jsx7("path", {
                   fill: "#000000",
                   d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
                   transform: "matrix(0 -1 -1 0 905.5 905.5)"
                 }),
-                /* @__PURE__ */ jsx8("path", {
+                /* @__PURE__ */ jsx7("path", {
                   fill: "#000000",
                   d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                   transform: "matrix(0 -1 -1 0 842.5 842.5)"
                 }),
-                /* @__PURE__ */ jsx8("path", {
+                /* @__PURE__ */ jsx7("path", {
                   fill: "#000000",
                   d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
                   transform: "matrix(0 -1 -1 0 779 779)"
                 }),
-                /* @__PURE__ */ jsx8("path", {
+                /* @__PURE__ */ jsx7("path", {
                   fill: "#000000",
                   d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                   transform: "matrix(0 -1 -1 0 715.5 715.5)"
                 }),
-                /* @__PURE__ */ jsx8("text", {
+                /* @__PURE__ */ jsx7("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "500",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx8("tspan", {
+                  children: /* @__PURE__ */ jsx7("tspan", {
                     x: "993.25",
                     y: "697",
                     children: "SuperData\u2122"
                   })
                 }),
-                /* @__PURE__ */ jsx8("text", {
+                /* @__PURE__ */ jsx7("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "100",
                   "font-weight": "500",
-                  children: /* @__PURE__ */ jsx8("tspan", {
+                  children: /* @__PURE__ */ jsx7("tspan", {
                     x: "690.95",
                     y: "829",
                     children: "\xA9"
                   })
                 }),
-                /* @__PURE__ */ jsx8("text", {
+                /* @__PURE__ */ jsx7("text", {
                   fill: "#ffffff",
                   "font-family": "Roboto, sans-serif",
                   "font-size": "75",
@@ -7557,16 +7520,16 @@ var MenuLogo = () => {
 };
 
 // src/TitleSuperdata.tsx
-import { jsx as jsx9, jsxs as jsxs8 } from "react/jsx-runtime";
+import { jsx as jsx8, jsxs as jsxs8 } from "react/jsx-runtime";
 var TitleSuperdata = () => {
   return /* @__PURE__ */ jsxs8("div", {
     children: [
-      /* @__PURE__ */ jsx9("div", {
+      /* @__PURE__ */ jsx8("div", {
         className: "flex flex-col items-center justify-center text-center",
-        children: /* @__PURE__ */ jsx9("a", {
+        children: /* @__PURE__ */ jsx8("a", {
           href: "https://superdatas.org",
           className: "m-2",
-          children: /* @__PURE__ */ jsx9("picture", {
+          children: /* @__PURE__ */ jsx8("picture", {
             children: /* @__PURE__ */ jsxs8("svg", {
               xmlns: "http://www.w3.org/2000/svg",
               width: "300",
@@ -7574,60 +7537,60 @@ var TitleSuperdata = () => {
               viewBox: "0 0 3450 678",
               className: "m-6 h-12 w-48",
               children: [
-                /* @__PURE__ */ jsx9("defs", {}),
+                /* @__PURE__ */ jsx8("defs", {}),
                 /* @__PURE__ */ jsxs8("g", {
                   fill: "#ffffff",
                   "fill-rule": "evenodd",
                   transform: "translate(-151 -173)",
                   children: [
-                    /* @__PURE__ */ jsx9("path", {
+                    /* @__PURE__ */ jsx8("path", {
                       fill: "#ffffff",
                       d: "M508.516097,232.032195 L783.120976,781.241951 C791.271621,797.543242 784.664217,817.365452 768.362927,825.516097 C763.780698,827.807212 758.727967,829 753.604878,829 L204.395122,829 C186.169725,829 171.395122,814.225397 171.395122,796 C171.395122,790.876912 172.58791,785.824181 174.879024,781.241951 L449.483903,232.032195 C457.634548,215.730904 477.456758,209.123501 493.758049,217.274146 C500.144453,220.467348 505.322895,225.64579 508.516097,232.032195 Z",
                       transform: "matrix(0 -1 -1 0 980 980)"
                     }),
-                    /* @__PURE__ */ jsx9("path", {
+                    /* @__PURE__ */ jsx8("path", {
                       fill: "#147df5",
                       d: "M419.705262,277.910524 L658,754.5 L658,754.5 L151,754.5 L389.294738,277.910524 C393.493555,269.51289 403.704997,266.109076 412.102631,270.307893 C415.392597,271.952876 418.060279,274.620559 419.705262,277.910524 Z",
                       transform: "matrix(0 -1 -1 0 905.5 905.5)"
                     }),
-                    /* @__PURE__ */ jsx9("path", {
+                    /* @__PURE__ */ jsx8("path", {
                       fill: "#000000",
                       d: "M356.705262,340.910524 L532,691.5 L532,691.5 L151,691.5 L326.294738,340.910524 C330.493555,332.51289 340.704997,329.109076 349.102631,333.307893 C352.392597,334.952876 355.060279,337.620559 356.705262,340.910524 Z",
                       transform: "matrix(0 -1 -1 0 842.5 842.5)"
                     }),
-                    /* @__PURE__ */ jsx9("path", {
+                    /* @__PURE__ */ jsx8("path", {
                       fill: "#000000",
                       d: "M293.205262,404.410524 L405,628 L405,628 L151,628 L262.794738,404.410524 C266.993555,396.01289 277.204997,392.609076 285.602631,396.807893 C288.892597,398.452876 291.560279,401.120559 293.205262,404.410524 Z",
                       transform: "matrix(0 -1 -1 0 779 779)"
                     }),
-                    /* @__PURE__ */ jsx9("path", {
+                    /* @__PURE__ */ jsx8("path", {
                       fill: "#000000",
                       d: "M230.599689,469.699379 L278,564.5 L278,564.5 L151,564.5 L198.400311,469.699379 C202.846117,460.807766 213.658232,457.203728 222.549845,461.649534 C226.033338,463.391281 228.857943,466.215886 230.599689,469.699379 Z",
                       transform: "matrix(0 -1 -1 0 715.5 715.5)"
                     }),
-                    /* @__PURE__ */ jsx9("text", {
+                    /* @__PURE__ */ jsx8("text", {
                       fill: "#ffffff",
                       "font-family": "Roboto, sans-serif",
                       "font-size": "500",
                       "font-weight": "500",
-                      children: /* @__PURE__ */ jsx9("tspan", {
+                      children: /* @__PURE__ */ jsx8("tspan", {
                         x: "993.25",
                         y: "697",
                         children: "SuperData\u2122"
                       })
                     }),
-                    /* @__PURE__ */ jsx9("text", {
+                    /* @__PURE__ */ jsx8("text", {
                       fill: "#ffffff",
                       "font-family": "Roboto, sans-serif",
                       "font-size": "100",
                       "font-weight": "500",
-                      children: /* @__PURE__ */ jsx9("tspan", {
+                      children: /* @__PURE__ */ jsx8("tspan", {
                         x: "690.95",
                         y: "829",
                         children: "\xA9"
                       })
                     }),
-                    /* @__PURE__ */ jsx9("text", {
+                    /* @__PURE__ */ jsx8("text", {
                       fill: "#ffffff",
                       "font-family": "Roboto, sans-serif",
                       "font-size": "75",
@@ -7640,20 +7603,36 @@ var TitleSuperdata = () => {
           })
         })
       }),
-      /* @__PURE__ */ jsx9("h1", {
+      /* @__PURE__ */ jsx8("h1", {
         className: "text-center text-5xl font-bold text-white",
-        children: /* @__PURE__ */ jsx9(motion.span, {
+        children: /* @__PURE__ */ jsx8(motion.span, {
           initial: { opacity: 0 },
           animate: { opacity: 1 },
           transition: { delay: 0.5, duration: 1.5 },
-          children: /* @__PURE__ */ jsx9("a", {
+          children: /* @__PURE__ */ jsx8("a", {
             href: "https://superdatas.org",
             className: "flex justify-center",
-            children: /* @__PURE__ */ jsx9("picture", {})
+            children: /* @__PURE__ */ jsx8("picture", {})
           })
         })
       })
     ]
+  });
+};
+
+// src/Version.tsx
+import { jsx as jsx9 } from "react/jsx-runtime";
+var ELEMENTS2 = 1;
+var Version = () => {
+  return /* @__PURE__ */ jsx9("button", {
+    className: "m-2 hidden rounded-full py-2 px-4 text-xs font-bold text-black shadow-md hover:shadow-xl md:block",
+    style: k(ELEMENTS2),
+    children: /* @__PURE__ */ jsx9("a", {
+      href: "http://twitter.com/miguelgargallo",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "v1.9.8"
+    })
   });
 };
 

@@ -42,26 +42,6 @@ export const Menu = () => {
             ITAMAESAN&trade;
           </a>
         </button>
-        <div
-          className="hidden py-2 px-4 font-bold text-white md:block"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <button className="hidden py-2 px-4 font-bold text-white md:block">
-            <a
-              href="http://twitter.com/superdatas"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-          </button>
-          <Version />
-        </div>
       </div>
     </div>
   );
