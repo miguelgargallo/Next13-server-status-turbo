@@ -21,7 +21,7 @@ export const Menu = () => {
           <a href="/cloud"
           >App</a>
         </button>
-        <button className="px-8 py-2 underline font-bold text-white">
+        <button className="px-8 py-2 font-bold text-white">
           <a href="/dev"
           >Dev</a>
         </button>
