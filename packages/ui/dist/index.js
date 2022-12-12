@@ -7120,13 +7120,6 @@ var Menu = () => {
               href: "/dev",
               children: "Dev"
             })
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "px-8 py-2 font-bold text-white",
-            children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "https://pencil.li",
-              children: "Pencil"
-            })
           })
         ]
       })

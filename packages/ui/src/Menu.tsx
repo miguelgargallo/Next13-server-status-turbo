@@ -25,10 +25,6 @@ export const Menu = () => {
           <a href="/dev"
           >Dev</a>
         </button>
-        <button className="px-8 py-2 font-bold text-white">
-          <a href="https://pencil.li"
-          >Pencil</a>
-        </button>
       </div>
     </div>
   );
