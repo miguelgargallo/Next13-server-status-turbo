@@ -49,26 +49,30 @@ export const Footer = () => {
             </picture>
           </a>
           <Versions />
+          <div
+            className="hidden py-2 px-4 font-bold text-white md:block"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {" "}
+            <button className="hidden py-2 px-4 font-bold text-white md:block">
+              <a
+                href="http://twitter.com/miguelgargallo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </button>
+          </div>
         </div>
-        <div
-          className="hidden py-2 px-4 font-bold text-white md:block"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <button className="hidden py-2 px-4 font-bold text-white md:block">
-            <a
-              href="http://twitter.com/miguelgargallo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-          </button>
-        </div>
+
+        <p
+          className="text-white"
+        >Better Together, Pencil Group.</p>
       </div>
     </footer>
   );
