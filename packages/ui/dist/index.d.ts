@@ -2,7 +2,7 @@ declare const Button: () => JSX.Element;
 
 declare const Menu: () => JSX.Element;
 
-declare const Supermenu: () => JSX.Element;
+declare const MenuAlpha: () => JSX.Element;
 
 declare const MenuLogo: () => JSX.Element;
 
@@ -24,4 +24,4 @@ declare const PencilLogo: () => JSX.Element;
 
 declare const Versions: () => JSX.Element;
 
-export { Button, Contact, Footer, Menu, MenuLogo, PencilLogo, PylarLogo, Scrollable, SuperdataLogo, Supermenu, TitleSuperdata, Version, Versions };
+export { Button, Contact, Footer, Menu, MenuAlpha, MenuLogo, PencilLogo, PylarLogo, Scrollable, SuperdataLogo, TitleSuperdata, Version, Versions };
