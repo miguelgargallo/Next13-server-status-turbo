@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Head from "next/head";
-import { Menu } from "ui";
+import { MenuCloud } from "ui";
 import { TitleSuperdata } from "ui";
 import { Footer } from "ui";
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ export default function Home() {
         <title>Cloud by SuperData</title>
         <link rel="icon" href="./favicon.ico" />
       </Head>
-      <Menu />
+      <MenuCloud />
       <main>
         <TitleSuperdata />
         <div>
