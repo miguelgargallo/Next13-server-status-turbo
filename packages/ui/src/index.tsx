@@ -21,3 +21,4 @@ export * from "./Contact";
 export * from "./PylarLogo";
 export * from "./SuperdataLogo";
 export * from "./PencilLogo";
+export * from "./Versions";

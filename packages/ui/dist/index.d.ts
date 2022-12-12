@@ -22,4 +22,6 @@ declare const SuperdataLogo: () => JSX.Element;
 
 declare const PencilLogo: () => JSX.Element;
 
-export { Button, Contact, Footer, Menu, MenuLogo, PencilLogo, PylarLogo, Scrollable, SuperdataLogo, Supermenu, TitleSuperdata, Version };
+declare const Versions: () => JSX.Element;
+
+export { Button, Contact, Footer, Menu, MenuLogo, PencilLogo, PylarLogo, Scrollable, SuperdataLogo, Supermenu, TitleSuperdata, Version, Versions };

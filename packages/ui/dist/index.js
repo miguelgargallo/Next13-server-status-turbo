@@ -548,7 +548,8 @@ __export(src_exports, {
   SuperdataLogo: () => SuperdataLogo,
   Supermenu: () => Supermenu,
   TitleSuperdata: () => TitleSuperdata,
-  Version: () => Version
+  Version: () => Version,
+  Versions: () => Versions
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -7676,159 +7677,194 @@ var TitleSuperdata = () => {
   });
 };
 
-// src/Footer.tsx
+// src/Versions.tsx
 var import_jsx_runtime10 = require("react/jsx-runtime");
+var Versions = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("button", {
+    className: "hidden bg-yellow-200 py-2 px-4 text-xs font-bold text-black md:block",
+    children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+      href: "http://github.com/miguelgargallo/next13-Fetch-Data-turbo",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "v1.7.5"
+    })
+  });
+};
+
+// src/Footer.tsx
+var import_jsx_runtime11 = require("react/jsx-runtime");
 var Footer = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("footer", {
+  return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("footer", {
     className: "bg-black py-8 text-center text-white",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("a", {
           children: [
             "Made with \u2764\uFE0F by",
             " ",
-            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+            /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("a", {
               href: "https://twitter.com/miguelgargallo",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "hover:text-blue text-indigo-600",
+              className: "hover:text-blue text-white",
               children: "Miguel Gargallo"
             }),
             "."
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("a", {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("a", {
           children: [
             "2022 \xA9",
             " ",
-            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
+            /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("a", {
               href: "https://huggingface.co/spaces/superdatas/LICENSE",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "hover:text-blue text-indigo-600",
-              children: "Pylar\u2122 AI creative ML license"
+              className: "hover:text-blue text-white",
+              children: "Pylar AI creative ML license"
             }),
             "."
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", {
         className: "hidden sm:block",
-        children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", {
-          className: "flex w-full items-center justify-center",
-          children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", {
-            href: "https://huggingface.co/spaces/superdatas/LICENSE",
-            target: "_blank",
-            rel: "noopener noreferrer",
-            className: "hidden p-2 md:block",
-            children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("picture", {
-              children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("img", {
-                src: "https://huggingface.co/front/assets/huggingface_logo.svg",
-                alt: "Landscape picture",
-                width: 40,
-                height: 20
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", {
+            className: "flex w-full items-center justify-center",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("a", {
+                href: "https://huggingface.co/spaces/superdatas/LICENSE",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "hidden p-2 md:block",
+                children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("picture", {
+                  children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("img", {
+                    src: "https://huggingface.co/front/assets/huggingface_logo.svg",
+                    alt: "Landscape picture",
+                    width: 40,
+                    height: 20
+                  })
+                })
+              }),
+              /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Versions, {})
+            ]
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", {
+            className: "hidden py-2 px-4 font-bold text-white md:block",
+            style: {
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            },
+            children: [
+              " ",
+              /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("button", {
+                className: "hidden py-2 px-4 font-bold text-white md:block",
+                children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("a", {
+                  href: "http://twitter.com/miguelgargallo",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  children: "Twitter"
+                })
               })
-            })
+            ]
           })
-        })
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", {
-        className: "text-white",
-        children: "SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil."
+        ]
       })
     ]
   });
 };
 
 // src/Scrollable.tsx
-var import_jsx_runtime11 = require("react/jsx-runtime");
+var import_jsx_runtime12 = require("react/jsx-runtime");
 var Scrollable = () => {
   const { scrollYProgress } = useScroll();
-  return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(motion.div, {
+  return /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.div, {
     className: "progress-bar",
     style: { scaleX: scrollYProgress }
   });
 };
 
 // src/Contact.tsx
-var import_jsx_runtime12 = require("react/jsx-runtime");
+var import_jsx_runtime13 = require("react/jsx-runtime");
 var Contact = () => {
-  return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", {
+  return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", {
     className: "pylarDiv",
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.button, {
         className: "pylarButtonEmailStyle",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1 },
-        children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("a", {
           href: "mailto:sales@pylar.org",
           target: "_blank",
           rel: "noreferrer",
           children: [
             "Mail now",
-            /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", {
               className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
               children: "\u2192"
             })
           ]
         })
       }),
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", {
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", {
         className: "pylarDiv",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.button, {
             className: "pylarButtonTwitterStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1 },
-            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("a", {
               href: "https://twitter.com/superdatas",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "MD Twitter now",
-                /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.button, {
             className: "pylarButtonWhatsappStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
             transition: { delay: 1.2 },
-            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+            children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("a", {
               href: "https://wa.me/+14077067844",
               target: "_blank",
               rel: "noreferrer",
               children: [
                 "Whatsapp now",
-                /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", {
             className: "pylarDiv",
-            children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(motion.button, {
+            children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(motion.button, {
               className: "pylarButtonTelegramStyle",
               initial: { opacity: 0 },
               animate: { opacity: 1 },
               transition: { delay: 1.4 },
-              children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("a", {
+              children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("a", {
                 href: "https://telegram.me/pencildomains",
                 target: "_blank",
                 rel: "noreferrer",
                 children: [
                   "Telegram Now",
-                  /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("span", {
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", {
                     className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                     children: "\u2192"
                   })
@@ -7854,5 +7890,6 @@ var Contact = () => {
   SuperdataLogo,
   Supermenu,
   TitleSuperdata,
-  Version
+  Version,
+  Versions
 });

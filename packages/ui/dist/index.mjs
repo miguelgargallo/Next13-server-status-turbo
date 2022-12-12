@@ -7657,89 +7657,124 @@ var TitleSuperdata = () => {
   });
 };
 
+// src/Versions.tsx
+import { jsx as jsx10 } from "react/jsx-runtime";
+var Versions = () => {
+  return /* @__PURE__ */ jsx10("button", {
+    className: "hidden bg-yellow-200 py-2 px-4 text-xs font-bold text-black md:block",
+    children: /* @__PURE__ */ jsx10("a", {
+      href: "http://github.com/miguelgargallo/next13-Fetch-Data-turbo",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "v1.7.5"
+    })
+  });
+};
+
 // src/Footer.tsx
-import { jsx as jsx10, jsxs as jsxs9 } from "react/jsx-runtime";
+import { jsx as jsx11, jsxs as jsxs9 } from "react/jsx-runtime";
 var Footer = () => {
   return /* @__PURE__ */ jsxs9("footer", {
     className: "bg-black py-8 text-center text-white",
     children: [
-      /* @__PURE__ */ jsx10("div", {
+      /* @__PURE__ */ jsx11("div", {
         children: /* @__PURE__ */ jsxs9("a", {
           children: [
             "Made with \u2764\uFE0F by",
             " ",
-            /* @__PURE__ */ jsx10("a", {
+            /* @__PURE__ */ jsx11("a", {
               href: "https://twitter.com/miguelgargallo",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "hover:text-blue text-indigo-600",
+              className: "hover:text-blue text-white",
               children: "Miguel Gargallo"
             }),
             "."
           ]
         })
       }),
-      /* @__PURE__ */ jsx10("div", {
+      /* @__PURE__ */ jsx11("div", {
         children: /* @__PURE__ */ jsxs9("a", {
           children: [
             "2022 \xA9",
             " ",
-            /* @__PURE__ */ jsx10("a", {
+            /* @__PURE__ */ jsx11("a", {
               href: "https://huggingface.co/spaces/superdatas/LICENSE",
               target: "_blank",
               rel: "noopener noreferrer",
-              className: "hover:text-blue text-indigo-600",
-              children: "Pylar\u2122 AI creative ML license"
+              className: "hover:text-blue text-white",
+              children: "Pylar AI creative ML license"
             }),
             "."
           ]
         })
       }),
-      /* @__PURE__ */ jsx10("div", {
+      /* @__PURE__ */ jsxs9("div", {
         className: "hidden sm:block",
-        children: /* @__PURE__ */ jsx10("div", {
-          className: "flex w-full items-center justify-center",
-          children: /* @__PURE__ */ jsx10("a", {
-            href: "https://huggingface.co/spaces/superdatas/LICENSE",
-            target: "_blank",
-            rel: "noopener noreferrer",
-            className: "hidden p-2 md:block",
-            children: /* @__PURE__ */ jsx10("picture", {
-              children: /* @__PURE__ */ jsx10("img", {
-                src: "https://huggingface.co/front/assets/huggingface_logo.svg",
-                alt: "Landscape picture",
-                width: 40,
-                height: 20
+        children: [
+          /* @__PURE__ */ jsxs9("div", {
+            className: "flex w-full items-center justify-center",
+            children: [
+              /* @__PURE__ */ jsx11("a", {
+                href: "https://huggingface.co/spaces/superdatas/LICENSE",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "hidden p-2 md:block",
+                children: /* @__PURE__ */ jsx11("picture", {
+                  children: /* @__PURE__ */ jsx11("img", {
+                    src: "https://huggingface.co/front/assets/huggingface_logo.svg",
+                    alt: "Landscape picture",
+                    width: 40,
+                    height: 20
+                  })
+                })
+              }),
+              /* @__PURE__ */ jsx11(Versions, {})
+            ]
+          }),
+          /* @__PURE__ */ jsxs9("div", {
+            className: "hidden py-2 px-4 font-bold text-white md:block",
+            style: {
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            },
+            children: [
+              " ",
+              /* @__PURE__ */ jsx11("button", {
+                className: "hidden py-2 px-4 font-bold text-white md:block",
+                children: /* @__PURE__ */ jsx11("a", {
+                  href: "http://twitter.com/miguelgargallo",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  children: "Twitter"
+                })
               })
-            })
+            ]
           })
-        })
-      }),
-      /* @__PURE__ */ jsx10("p", {
-        className: "text-white",
-        children: "SuperData, Pylar, Pencil, and the Pencil logo are trademarks of Pencil."
+        ]
       })
     ]
   });
 };
 
 // src/Scrollable.tsx
-import { jsx as jsx11 } from "react/jsx-runtime";
+import { jsx as jsx12 } from "react/jsx-runtime";
 var Scrollable = () => {
   const { scrollYProgress } = useScroll();
-  return /* @__PURE__ */ jsx11(motion.div, {
+  return /* @__PURE__ */ jsx12(motion.div, {
     className: "progress-bar",
     style: { scaleX: scrollYProgress }
   });
 };
 
 // src/Contact.tsx
-import { jsx as jsx12, jsxs as jsxs10 } from "react/jsx-runtime";
+import { jsx as jsx13, jsxs as jsxs10 } from "react/jsx-runtime";
 var Contact = () => {
   return /* @__PURE__ */ jsxs10("div", {
     className: "pylarDiv",
     children: [
-      /* @__PURE__ */ jsx12(motion.button, {
+      /* @__PURE__ */ jsx13(motion.button, {
         className: "pylarButtonEmailStyle",
         initial: { opacity: 0 },
         animate: { opacity: 1 },
@@ -7750,7 +7785,7 @@ var Contact = () => {
           rel: "noreferrer",
           children: [
             "Mail now",
-            /* @__PURE__ */ jsx12("span", {
+            /* @__PURE__ */ jsx13("span", {
               className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
               children: "\u2192"
             })
@@ -7760,7 +7795,7 @@ var Contact = () => {
       /* @__PURE__ */ jsxs10("div", {
         className: "pylarDiv",
         children: [
-          /* @__PURE__ */ jsx12(motion.button, {
+          /* @__PURE__ */ jsx13(motion.button, {
             className: "pylarButtonTwitterStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
@@ -7771,14 +7806,14 @@ var Contact = () => {
               rel: "noreferrer",
               children: [
                 "MD Twitter now",
-                /* @__PURE__ */ jsx12("span", {
+                /* @__PURE__ */ jsx13("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ jsx12(motion.button, {
+          /* @__PURE__ */ jsx13(motion.button, {
             className: "pylarButtonWhatsappStyle",
             initial: { opacity: 0 },
             animate: { opacity: 1 },
@@ -7789,16 +7824,16 @@ var Contact = () => {
               rel: "noreferrer",
               children: [
                 "Whatsapp now",
-                /* @__PURE__ */ jsx12("span", {
+                /* @__PURE__ */ jsx13("span", {
                   className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                   children: "\u2192"
                 })
               ]
             })
           }),
-          /* @__PURE__ */ jsx12("div", {
+          /* @__PURE__ */ jsx13("div", {
             className: "pylarDiv",
-            children: /* @__PURE__ */ jsx12(motion.button, {
+            children: /* @__PURE__ */ jsx13(motion.button, {
               className: "pylarButtonTelegramStyle",
               initial: { opacity: 0 },
               animate: { opacity: 1 },
@@ -7809,7 +7844,7 @@ var Contact = () => {
                 rel: "noreferrer",
                 children: [
                   "Telegram Now",
-                  /* @__PURE__ */ jsx12("span", {
+                  /* @__PURE__ */ jsx13("span", {
                     className: "ml-2 bg-gradient-to-r from-white to-white bg-clip-text text-transparent",
                     children: "\u2192"
                   })
@@ -7834,5 +7869,6 @@ export {
   SuperdataLogo,
   Supermenu,
   TitleSuperdata,
-  Version
+  Version,
+  Versions
 };
