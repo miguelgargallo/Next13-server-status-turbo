@@ -16,32 +16,14 @@ export const Menu = () => {
         <button className="rounded-xl py-2 px-4 font-bold text-white">
           <a href="/">SuperData&trade;</a>
         </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a
-            href="https://pencil.li"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            Pencil Domains&trade;
-          </a>
+        <button className="rounded-xl py-2 px-4 font-bold text-white">
+          <a href="/app">App</a>
         </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a
-            href="https://pylar.org"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            Pylar&trade; AI
-          </a>
+        <button className="rounded-xl py-2 px-4 font-bold text-white">
+          <a href="/cloud">Cloud</a>
         </button>
-        <button className="hidden rounded-xl py-2 px-4 font-bold text-white sm:block">
-          <a
-            href="https://itamaesan.org"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            ITAMAESAN&trade;
-          </a>
+        <button className="rounded-xl py-2 px-4 font-bold text-white">
+          <a href="/dev">Dev</a>
         </button>
       </div>
     </div>

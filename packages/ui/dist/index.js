@@ -581,7 +581,7 @@ var MenuAlpha = () => {
     className: "flex flex-row items-center justify-between bg-gradient-to-r from-blue-400 to-blue-500",
     children: [
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
-        className: "px-8 py-2 font-bold text-white",
+        className: "px-8 py-2 underline font-bold text-white",
         children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
           href: "https://superdatas.org",
           target: "_blank",
@@ -608,7 +608,7 @@ var MenuAlpha = () => {
         })
       }),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", {
-        className: "px-8 py-2 underline font-bold text-white",
+        className: "px-8 py-2 font-bold text-white",
         children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("a", {
           href: "https://pencil.li",
           target: "_blank",
@@ -7108,30 +7108,24 @@ var Menu = () => {
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "https://pencil.li",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              children: "Pencil Domains\u2122"
+              href: "/app",
+              children: "App"
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "https://pylar.org",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              children: "Pylar\u2122 AI"
+              href: "/cloud",
+              children: "Cloud"
             })
           }),
           /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("a", {
-              href: "https://itamaesan.org",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              children: "ITAMAESAN\u2122"
+              href: "/dev",
+              children: "Dev"
             })
           })
         ]

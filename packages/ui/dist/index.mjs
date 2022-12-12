@@ -561,7 +561,7 @@ var MenuAlpha = () => {
     className: "flex flex-row items-center justify-between bg-gradient-to-r from-blue-400 to-blue-500",
     children: [
       /* @__PURE__ */ jsx2("button", {
-        className: "px-8 py-2 font-bold text-white",
+        className: "px-8 py-2 underline font-bold text-white",
         children: /* @__PURE__ */ jsx2("a", {
           href: "https://superdatas.org",
           target: "_blank",
@@ -588,7 +588,7 @@ var MenuAlpha = () => {
         })
       }),
       /* @__PURE__ */ jsx2("button", {
-        className: "px-8 py-2 underline font-bold text-white",
+        className: "px-8 py-2 font-bold text-white",
         children: /* @__PURE__ */ jsx2("a", {
           href: "https://pencil.li",
           target: "_blank",
@@ -7088,30 +7088,24 @@ var Menu = () => {
             })
           }),
           /* @__PURE__ */ jsx3("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ jsx3("a", {
-              href: "https://pencil.li",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              children: "Pencil Domains\u2122"
+              href: "/app",
+              children: "App"
             })
           }),
           /* @__PURE__ */ jsx3("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ jsx3("a", {
-              href: "https://pylar.org",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              children: "Pylar\u2122 AI"
+              href: "/cloud",
+              children: "Cloud"
             })
           }),
           /* @__PURE__ */ jsx3("button", {
-            className: "hidden rounded-xl py-2 px-4 font-bold text-white sm:block",
+            className: "rounded-xl py-2 px-4 font-bold text-white",
             children: /* @__PURE__ */ jsx3("a", {
-              href: "https://itamaesan.org",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              children: "ITAMAESAN\u2122"
+              href: "/dev",
+              children: "Dev"
             })
           })
         ]
